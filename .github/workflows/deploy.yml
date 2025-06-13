@@ -30,8 +30,8 @@ jobs:
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
+          server: pixie-ftp.porkbun.com
+          username: orionlw.me
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: _site/
           server-dir: /
