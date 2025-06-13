@@ -1,13 +1,16 @@
+---
+title: Orion Leidl Wilson
+---
 <!DOCTYPE html>
 <html lang="en">
     <head>
 
         <!-- General metadata -->
-        <title>Orion Leidl Wilson</title>
+        <title>{{ title }}</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <meta name="description" content="" />
-        <link rel="canonical" href="https://orionlw.me/pages/" />
+        <meta name="description" content="{{ description }}" />
+        <link rel="canonical" href="https://orionlw.me{{ page.url }}" />
 
         <!-- rel="me" verification -->
         <link rel="me" href="https://github.com/orionlw" />
@@ -18,12 +21,10 @@
     </head>
     <body>
             <header>
-                <h1> Orion Leidl Wilson </h1>
+                <h1> {{ title | default: "Orion Leidl Wilson" }} </h1>
             </header>
             
-            <p>Welcome to my personal website! Here you will find information about me, my projects, and my blog posts. Feel free to explore and connect with me!</p>
-<h2><a href="/posts/20250613/">First Post</a></h2>
-
+            {{ content }}
             
             <!-- footer -->
             <footer>
