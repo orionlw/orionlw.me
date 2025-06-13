@@ -1,0 +1,19 @@
+{
+  "name": "eleventy-personal-website",
+  "version": "1.0.0",
+  "description": "A personal website built with Eleventy",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "deploy": "npm run build && gh-pages -d _site"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}

@@ -1,0 +1,3 @@
+# Hello, World!
+
+Welcome to my personal website! Here you will find information about me, my projects, and my blog posts. Feel free to explore and connect with me!
