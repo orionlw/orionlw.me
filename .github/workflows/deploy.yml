@@ -22,7 +22,7 @@ jobs:
       #     node-version: '15.7.0'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build the website
         run: npx @11ty/eleventy
@@ -33,5 +33,5 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: public
+          local-dir: _site
           server-dir: /
