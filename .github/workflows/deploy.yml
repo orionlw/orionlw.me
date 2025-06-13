@@ -6,23 +6,26 @@ on:
       - main
 
 jobs:
-  deploy:
+  build_and_deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2.3.4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: "14"
+      # Uncomment if you want to specify a certain
+      # Node version. Otherwise the Node version installed
+      # on the GitHub VM will be used. For more details
+      # see: https://github.com/actions/virtual-environments
+      # - name: Setup Node.js environment
+      #   uses: actions/setup-node@v2.1.4
+      #   with:
+      #     node-version: '15.7.0'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Build the site
-        run: npm run build
+      - name: Build the website
+        run: npx @11ty/eleventy
 
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
@@ -30,5 +33,5 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: _site
+          local-dir: public
           server-dir: /
