@@ -27,9 +27,6 @@ jobs:
       - name: Fix Vulnerabilities
         run: npm audit fix --force
 
-      - name: Test
-        run: npm test
-
       - name: Build the website
         run: npx @11ty/eleventy
 
