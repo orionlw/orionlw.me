@@ -11,9 +11,9 @@ I am a musician located in Grand Pré, Nova Scotia, Canada. My main instrument i
 
 ## Blog
 
-{% for posts in collections.posts %}
+{% for post in collections.post %}
 
-### [{{ posts.data.title }}]({{ posts.url }})
+### [{{ post.data.title }}]({{ post.url }})
 
 {{ post.content }}
 {% endfor %}
