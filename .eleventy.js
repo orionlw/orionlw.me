@@ -1,6 +1,7 @@
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
+const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyImageTransformPlugin);
@@ -26,7 +27,7 @@ module.exports = function (eleventyConfig) {
   // Passthrough copy for assets
   eleventyConfig.addPassthroughCopy("src/assets");
 
-  // Passthrough for CSS 
+  // Passthrough for CSS
 
   eleventyConfig.addPassthroughCopy("bundle.css");
 
@@ -34,6 +35,18 @@ module.exports = function (eleventyConfig) {
   // Add a custom filter (example)
   eleventyConfig.addFilter("myFilter", function (value) {
     return value.toUpperCase();
+  });
+
+  eleventyConfig.addFilter("slice", function (arr, start, end) {
+    return (arr || []).slice(start, end);
+  });
+
+  eleventyConfig.addFilter("date", function (dateObj, format = "yyyy-MM-dd") {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(format);
+  });
+
+  eleventyConfig.addCollection("post", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("./src/posts/*.md");
   });
 
   // Set the template engine

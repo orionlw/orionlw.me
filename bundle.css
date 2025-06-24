@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: Font 
-  src: url('/font/font.woff2') format('woff2');
+  font-family: Font;
+  src: url("/font/font.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -25,46 +25,43 @@ dd {
   margin: 0;
 }
 
-
 :root {
-    /* color variables */
-    --bg-dark: hsl(227, 26%, 11%);
-    /* maybe switch around med-dark/accent names? 
-    I use med-dark for code highlights, and accent for <aside>, so far */
-    --bg-med-dark: hsl(227, 12%, 17%);
-    --bg-accent: hsl(227, 22%, 15%);
-    --ui-line-dark: hsl(226, 24%, 29%);
-    --fg-light: hsl(227, 87%, 95%);
-    --fg-med-light: hsl(227, 45%, 75%);
+  /* color variables */
+  --bg-dark: hsl(227, 26%, 11%);
+  --bg-med-dark: hsl(227, 12%, 17%);
+  --bg-accent: hsl(227, 22%, 15%);
+  --ui-line-dark: hsl(226, 24%, 29%);
+  --fg-light: hsl(227, 87%, 95%);
+  --fg-med-light: hsl(227, 45%, 75%);
 
-    --accent-light: hsl(327, 95%, 88%);
-    --accent-med-light: hsl(327, 55%, 75%);
-    /* --accent-med: hsl(327, 25%, 53%); */
-    --accent-dark: hsl(327, 45%, 37%);
+  --accent-light: hsl(327, 95%, 88%);
+  --accent-med-light: hsl(327, 55%, 75%);
+  /* --accent-med: hsl(327, 25%, 53%); */
+  --accent-dark: hsl(327, 45%, 37%);
 
-    /* size variables */
-    --global-margin: 16px;
-    --main-width: 50rem;
-    --article-width: 45rem;
-    --p-line-height: 1.75;
-    --section-header-padding: 6px;
+  /* size variables */
+  --global-margin: 24px; /* Increased from 16px */
+  --main-width: 50rem;
+  --article-width: 45rem;
+  --p-line-height: 1.75;
+  --section-header-padding: 6px;
 
-    /* lines, margins, borders */
-    --header-footer-border-thickness: 3px;
-    --border-radius-small: 2px;
-    --border-radius-large: 8px;
+  /* lines, margins, borders */
+  --header-footer-border-thickness: 3px;
+  --border-radius-small: 2px;
+  --border-radius-large: 8px;
 
-    /* font variables */
-    --body-font: "Font", sans-serif;
-    --body-font-weight: 400;
-    --heading-font: "Font", sans-serif;
-    --heading-font-weight: 700;
-    --heading-font-size: 1.2rem;
+  /* font variables */
+  --body-font: "Font", sans-serif;
+  --body-font-weight: 400;
+  --heading-font: "Font", sans-serif;
+  --heading-font-weight: 700;
+  --heading-font-size: 1.2rem;
 
-    font-family: var(--body-font);
-    font-weight: var(--body-font-weight);
-    /* canceled out for elements with display font */
-    /* text-underline-offset: 0.2em; */
+  font-family: var(--body-font);
+  font-weight: var(--body-font-weight);
+  /* canceled out for elements with display font */
+  /* text-underline-offset: 0.2em; */
 }
 
 /* header,
@@ -75,81 +72,112 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--heading-font);
-    /* text-underline-offset: auto; */
-    font-weight: var(--heading-font-weight) !important;
+  font-family: var(--heading-font);
+  /* text-underline-offset: auto; */
+  font-weight: var(--heading-font-weight) !important;
 }
-header, header * {
-    font-family: var(--heading-font);
-    /* text-underline-offset: auto; */
-    font-weight: var(--heading-font-weight);
-    font-size: var(--heading-font-size);
-    
-    & .dropdown-content { font-size: 0.95em; }
+header,
+header * {
+  font-family: var(--heading-font);
+  /* text-underline-offset: auto; */
+  font-weight: var(--heading-font-weight);
+  font-size: var(--heading-font-size);
+
+  & .dropdown-content {
+    font-size: 0.95em;
+  }
 }
-h1 { 
-    font-size: 1.5em; 
-    margin: 24px 0;
+h1 {
+  font-size: 1.5em;
+  margin: 24px 0;
 }
-h2 { 
-    font-size: 1.2em; 
-    margin: 40px 0 8px;
+h2 {
+  font-size: 1.2em;
+  margin: 40px 0 8px;
 }
 /* make post title links/video links slightly smaller */
-h2:is(.post-link), h2:is(.video-link) { font-size: 1.15em; }
-h3 { 
-    font-size: 1.1em;
-    margin: 40px 0 8px !important;
+h2:is(.post-link),
+h2:is(.video-link) {
+  font-size: 1.15em;
+}
+h3 {
+  font-size: 1.1em;
+  margin: 40px 0 8px !important;
 }
 
 /* ######## colors, sizes ######## */
 body {
-    background-color: var(--bg-dark);
-    color: var(--fg-light);
-    & a { color: inherit; }
+  background-color: var(--bg-dark);
+  color: var(--fg-light);
+  & a {
+    color: inherit;
+  }
+  /* Add a little breathing room on mobile */
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 header {
-    background-color: var(--bg-dark);
-    margin-top: 16px;
-    margin-left: var(--global-margin);
-    margin-right: var(--global-margin);
-    padding-bottom: 8px;
-  }
+  background-color: var(--bg-dark);
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 8px;
+  max-width: var(--main-width);
+  width: 100%;
+}
 
 main {
-    margin-top: 32px;
-    margin-bottom: 32px;
-    margin-left: var(--global-margin);
-    margin-right: var(--global-margin);
-    & hr {
-        border: none;
-        border-bottom: 1px solid var(--accent-med-light);
-    }
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--main-width);
+  width: 100%;
+  & hr {
+    border: none;
+    border-bottom: 1px solid var(--accent-med-light);
+  }
 }
 @media screen and (min-width: 660px) {
-    main { margin-top: 64px; }
+  main {
+    margin-top: 64px;
+  }
 }
 
 footer {
-    background-color: var(--bg-dark);
-    color: var(--fg-light);
-    margin-left: var(--global-margin);
-    margin-right: var(--global-margin);
-    margin-bottom: 8px;
-    padding: 0;
-    & .social-icons { margin-top: 16px; }
-    & .social-icons a:not(:last-child) { 
-        padding-right: 12px;
-        display: inline-flex;
-        flex-flow: row wrap;
+  background-color: var(--bg-dark);
+  color: var(--fg-light);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  padding: 0 0 8px 0;
+  max-width: var(--main-width);
+  width: 100%;
+  & .social-icons {
+    margin-top: 16px;
+  }
+  & .social-icons a:not(:last-child) {
+    padding-right: 12px;
+    display: inline-flex;
+    flex-flow: row wrap;
+  }
+  & .footer-link-list a:not(:last-child) {
+    padding-right: 24px;
+    display: inline-flex;
+    flex-flow: row wrap;
+    @media screen and (min-width: 480px) {
+      padding-right: 32px;
     }
-    & .footer-link-list a:not(:last-child) { 
-        padding-right: 24px;
-        display: inline-flex;
-        flex-flow: row wrap;
-        @media screen and (min-width: 480px) { padding-right: 32px; }
-    }
+  }
+}
+
+/* Responsive: increase max-width on very large screens */
+@media screen and (min-width: 1200px) {
+  :root {
+    --main-width: 60rem;
+    --article-width: 54rem;
+  }
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -185,7 +213,7 @@ select {
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
   *,
   *::before,
