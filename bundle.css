@@ -172,6 +172,10 @@ footer {
   }
 }
 
+.footer-links {
+  margin: 2em 0 1em 0;
+}
+
 /* Responsive: increase max-width on very large screens */
 @media screen and (min-width: 1200px) {
   :root {
@@ -223,4 +227,39 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Add to bundle.css */
+.social-icons {
+  margin-bottom: 1.5em;
+}
+.social-icons a {
+  margin-right: 1em;
+  text-decoration: none;
+  color: inherit;
+}
+.social-icons i {
+  margin-right: 0.4em;
+}
+.section-bottom-space {
+  margin-bottom: 40px;
+}
+.section-top-space {
+  margin-top: 40px;
+}
+a:focus,
+button:focus {
+  outline: 2px solid var(--accent-med-light);
+  outline-offset: 2px;
+}
+.main-nav {
+  margin: 0 auto 2em auto;
+  max-width: var(--main-width);
+  width: 100%;
+  text-align: center;
+}
+.main-nav a {
+  margin: 0 1em;
+  text-decoration: none;
+  color: inherit;
 }

@@ -1,23 +1,9 @@
 ---
 layout: layout.liquid
-title: Orion Leidl Wilson
+title: Blog
 ---
 
-<p>
-  Welcome to my personal website! Here you will find information about me, my
-  projects, and my blog posts. Feel free to explore and connect with me! This
-  site is very much a work in progress, and will be evolving over the summer.
-</p>
-
-<h2>About Me</h2>
-<p class="section-top-space">
-  I am a musician located in Grand Pré, Nova Scotia, Canada. My main instrument
-  is electric bass. I am also a composer. Other interests include cycling,
-  computers, and film/tv.
-</p>
-
-<h2>Blog</h2>
-{% for post in collections.post | reverse | slice(0, 3) %}
+{% for post in collections.post | reverse %}
 <article class="blog-preview" style="margin-bottom: 2em">
   {% if post.data.image %}
   <a href="{{ post.url }}">
@@ -33,9 +19,9 @@ title: Orion Leidl Wilson
     />
   </a>
   {% endif %}
-  <h3 style="margin-bottom: 0.2em">
+  <h2 style="margin-bottom: 0.2em">
     <a href="{{ post.url }}">{{ post.data.title }}</a>
-  </h3>
+  </h2>
   <div
     style="color: var(--fg-med-light); font-size: 0.95em; margin-bottom: 0.5em"
   >

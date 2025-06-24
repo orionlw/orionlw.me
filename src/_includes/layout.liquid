@@ -12,6 +12,7 @@ title: Orion Leidl Wilson
         <meta name="description" content="{{ description }}" />
         <link rel="canonical" href="https://orionlw.me{{ page.url }}" />
         <link rel="stylesheet" href="/bundle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <!-- rel="me" verification -->
         <link rel="me" href="https://github.com/orionlw" />
 
@@ -20,28 +21,41 @@ title: Orion Leidl Wilson
 
     </head>
     <body>
-            <header>
-                <h1> {{ title | default: "Orion Leidl Wilson" }} </h1>
-            </header>
-            
-            {{ content }}
-            
-            <!-- footer -->
-            <footer>
-                <div class="footer-links">
-                    <a href="/" title="Back to Home">← Back to Home</a>
-                </div>
-                <div style="height: 1em;"></div>
-                <div class="social-icons">
-                    <a href="https://github.com/orionlw" title="GitHub">GitHub</a>
-                    <a href="https://mastodon.social/@orionlw" rel="me" title="Mastodon">Mastodon</a>
-                    <a href="https://letterboxd.com/orionlw" title="Letterboxd">Letterboxd</a>
-                    <a href="mailto:orionlw@pm.me" title="Email">Email</a>
-                </div>
-                <p>© 2025 Orion Leidl Wilson. Site made with <a href="https://www.11ty.dev/" target="_blank" rel="noopener">11ty</a></p>
-                
-            </footer>
-        <!-- close "wrapper"-->
-        </div>
-    </body>
+    <header>
+        <h1>{{ title | default: "Orion Leidl Wilson" }}</h1>
+    </header>
+
+    <nav class="main-nav" style="margin: 0 auto 2em auto; max-width: var(--main-width); width: 100%; text-align: center;">
+        <a href="/" style="margin: 0 1em;">Home</a>
+        <a href="/blog" style="margin: 0 1em;">Blog</a>
+    </nav>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+    {% if page.url != "/" %}
+    <div class="footer-links" style="margin: 2em 0 1em 0;">
+        <a href="/" title="Back to Home">← Back to Home</a>
+    </div>
+    {% endif %}
+    <div style="height: 1em;"></div>
+    <div class="social-icons">
+        <a href="https://github.com/orionlw" title="GitHub">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://mastodon.social/@orionlw" rel="me" title="Mastodon">
+            <i class="fab fa-mastodon"></i> Mastodon
+        </a>
+        <a href="https://letterboxd.com/orionlw" title="Letterboxd">
+            <i class="fab fa-letterboxd"></i> Letterboxd
+        </a>
+        <a href="mailto:orionlw@pm.me" title="Email">
+            <i class="fas fa-envelope"></i> Email
+        </a>
+    </div>
+    <p>© 2025 Orion Leidl Wilson. Site made with <a href="https://www.11ty.dev/" target="_blank" rel="noopener">11ty</a></p>
+    </footer>
+</body>
 </html>
