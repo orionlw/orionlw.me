@@ -26,6 +26,10 @@ module.exports = function (eleventyConfig) {
   // Passthrough copy for assets
   eleventyConfig.addPassthroughCopy("src/assets");
 
+  // Passthrough for CSS 
+
+  eleventyConfig.addPassthroughCopy("bundle.css");
+
   // Add a custom filter (example)
   eleventyConfig.addFilter("myFilter", function (value) {
     return value.toUpperCase();
