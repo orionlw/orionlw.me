@@ -1,6 +1,6 @@
 # Eleventy Personal Website
 
-This is a personal website built using Eleventy (11ty), a simple and flexible static site generator. The project is structured to allow for easy customization and deployment.
+This is my personal website built using Eleventy (11ty), a simple and flexible static site generator.
 
 ## Project Structure
 
