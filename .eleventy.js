@@ -30,6 +30,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("bundle.css");
 
+  eleventyConfig.addPassthroughCopy("src/font/font.woff2");
   // Add a custom filter (example)
   eleventyConfig.addFilter("myFilter", function (value) {
     return value.toUpperCase();
