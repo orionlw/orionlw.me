@@ -3,50 +3,48 @@ layout: layout.liquid
 title: Orion Leidl Wilson
 ---
 
-<p>
-  Welcome to my personal website! Here you will find information about me, my
-  projects, and my blog posts. Feel free to explore and connect with me! This
-  site is very much a work in progress, and will be evolving over the summer.
-</p>
-
-<h2>About Me</h2>
-<p class="section-top-space">
-  I am a musician located in Grand Pré, Nova Scotia, Canada. My main instrument
-  is electric bass. I am also a composer. Other interests include cycling,
-  computers, and film/tv.
-</p>
-
-<h2>Blog</h2>
-{% for post in collections.post | reverse | slice(0, 3) %}
-<article class="blog-preview" style="margin-bottom: 2em">
-  {% if post.data.image %}
-  <a href="{{ post.url }}">
-    <img
-      src="{{ post.data.image }}"
-      alt="{{ post.data.title }}"
-      style="
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin-bottom: 0.5em;
-      "
-    />
-  </a>
-  {% endif %}
-  <h3 style="margin-bottom: 0.2em">
-    <a href="{{ post.url }}">{{ post.data.title }}</a>
-  </h3>
-  <div
-    style="color: var(--fg-med-light); font-size: 0.95em; margin-bottom: 0.5em"
-  >
-    {{ post.date | date("yyyy-MM-dd") }}
-  </div>
-  <div>
-    {% if post.data.description %}
-    {{ post.data.description }}
-    {% else %}
-    {{ post.templateContent | striptags | truncate(200, true, "…") }}
-    {% endif %}
-  </div>
-</article>
-{% endfor %}
+<main class="container">
+  <section>
+    <p>
+      Welcome to my personal website! Here you will find information about me,
+      my projects, and my blog posts. Feel free to explore and connect with me!
+      This site is very much a work in progress, and will be evolving over the
+      summer.
+    </p>
+  </section>
+  <section>
+    <h2>Latest Posts</h2>
+    {% for post in collections.post | reverse | slice(0, 3) %}
+    <article class="blog-preview">
+      <h3>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+      </h3>
+      <small
+        style="display: block; margin-bottom: 0.5em"
+        >{{ post.date | date("yyyy-MM-dd") }}</small
+      >
+      {% if post.data.image %}
+      <a href="{{ post.url }}">
+        <img
+          src="{{ post.data.image }}"
+          alt="{{ post.data.title }}"
+          style="
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 0 auto 1em auto;
+          "
+        />
+      </a>
+      {% endif %}
+      <p>
+        {% if post.data.description %}
+        {{ post.data.description }}
+        {% else %}
+        {{ post.templateContent | striptags | truncate(200, true, "…") }}
+        {% endif %}
+      </p>
+    </article>
+    {% endfor %}
+  </section>
+</main>
