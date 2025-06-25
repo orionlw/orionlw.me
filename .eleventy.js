@@ -10,7 +10,7 @@ module.exports = function (eleventyConfig) {
     type: "atom",
     outputPath: "/feed.xml",
     collection: {
-      name: "posts",
+      name: "post",
       limit: 10,
     },
     metadata: {
@@ -29,6 +29,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("bundle.css");
   eleventyConfig.addPassthroughCopy("src/font/font.woff2");
   eleventyConfig.addPassthroughCopy("src/media");
+  eleventyConfig.addPassthroughCopy("src/guitar-solid.svg");
+  // Or for SVG:
+  // eleventyConfig.addPassthroughCopy("src/favicon.svg");
 
   // Universal filters (available in all template engines)
   eleventyConfig.addFilter("myFilter", function (value) {

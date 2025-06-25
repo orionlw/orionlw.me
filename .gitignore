@@ -4,5 +4,5 @@ node_modules/
 .env
 node_modules/
 eleventy-personal-website.code-workspace
-posts/.obsidian
-posts/templates/
+src/posts/.obsidian/
+src/posts/templates/
