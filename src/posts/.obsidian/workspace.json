@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a62e0bbb56e93c41",
+            "id": "5b4082abaec91411",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -168,8 +168,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a62e0bbb56e93c41",
+  "active": "5b4082abaec91411",
   "lastOpenFiles": [
-    "20250613.md"
+    "20250625.md",
+    "20250613.md",
+    "20250623.md",
+    "templates",
+    "{{ year }}/{{ month }}/index.njk",
+    "{{ year }}/index.njk",
+    "{{ year }}/{{ month }}",
+    "{{ year }}",
+    "2025/6/index.njk",
+    "2025/6",
+    "2025/index.njk",
+    "2025/20250623.md",
+    "2025/20250613.md",
+    "2025"
   ]
 }

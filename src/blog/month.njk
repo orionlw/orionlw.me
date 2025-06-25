@@ -1,0 +1,26 @@
+---
+pagination:
+  data: collections.postsByYearMonth
+  size: 1
+  alias: yearData
+  addAllPagesToCollections: true
+permalink: "/blog/{{ year }}/{{ month }}/index.html"
+eleventyComputed:
+  year: "{{ pagination.items[0][0] }}"
+  month: "{{ pagination.items[0][1] }}"
+  posts: "{{ pagination.items[0][1][month] }}"
+---
+
+<main class="container">
+  <h1>Blog: {{ year }}-{{ month | padStart(2, '0') }}</h1>
+  <nav>
+    <a href="/blog/">All</a>
+    <a href="/blog/{{ year }}/">{{ year }}</a>
+    <a href="/blog/{{ year }}/{{ month }}/">{{
+      "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split(" ")[month - 1]
+    }}</a>
+  </nav>
+  {% for post in posts | reverse %}
+  <!-- post markup here -->
+  {% endfor %}
+</main>

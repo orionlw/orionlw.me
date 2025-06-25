@@ -50,6 +50,21 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByGlob("./src/posts/*.md");
   });
 
+  // All posts, sorted by date
+  eleventyConfig.addCollection("postsByYearMonth", function (collectionApi) {
+    const posts = collectionApi.getFilteredByTag("post");
+    const archive = {};
+    posts.forEach((post) => {
+      const date = post.date;
+      const year = date.getFullYear();
+      const month = date.getMonth() + 1; // 1-based
+      if (!archive[year]) archive[year] = {};
+      if (!archive[year][month]) archive[year][month] = [];
+      archive[year][month].push(post);
+    });
+    return archive;
+  });
+
   // Set the template engine
   return {
     dir: {
