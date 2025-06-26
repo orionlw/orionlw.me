@@ -6,3 +6,4 @@ node_modules/
 eleventy-personal-website.code-workspace
 src/posts/.obsidian/
 src/posts/templates/
+src/.obsidian/
