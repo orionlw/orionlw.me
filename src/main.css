@@ -1,0 +1,40 @@
+/* Light mode Matrix-inspired theme */
+html,
+body {
+  background: #f6fff6; /* very pale green */
+  color: #162416; /* dark green text */
+}
+.card,
+.blog-preview {
+  background: #eafaea; /* light green card */
+  color: #162416;
+  border-color: #b8ffb8;
+}
+a {
+  color: #009900; /* matrix green, but readable */
+}
+nav.nav,
+footer.container {
+  background: #eafaea;
+  color: #162416;
+}
+.card img,
+.blog-preview img {
+  filter: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #009900; /* matrix green headings */
+}
+small,
+.muted {
+  color: #4e6e4e;
+}
+::selection {
+  background: #b8ffb8;
+  color: #162416;
+}
