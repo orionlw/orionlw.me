@@ -1,6 +1,6 @@
 ---
 layout: layout.liquid
-title: Random Cat
+title: Cat of the Day
 permalink: /cat/index.html
 ---
 
@@ -31,11 +31,11 @@ permalink: /cat/index.html
       document.getElementById("cat-loading").style.display = "block";
       document.getElementById("cat-error").style.display = "none";
       try {
-        const res = await fetch("https://cataas.com/cat?json=true");
+        const res = await fetch("https://api.thecatapi.com/v1/images/search");
         if (!res.ok) throw new Error("Network error");
         const data = await res.json();
         const img = document.getElementById("cat-img");
-        img.src = "https://cataas.com" + data.url;
+        img.src = data[0].url;
         img.onload = () => {
           img.style.display = "block";
           document.getElementById("cat-loading").style.display = "none";
