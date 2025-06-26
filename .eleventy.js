@@ -26,8 +26,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy("src/assets");
-  eleventyConfig.addPassthroughCopy("bundle.css");
-  eleventyConfig.addPassthroughCopy("src/font/font.woff2");
+  eleventyConfig.addPassthroughCopy("src/darkmode.css");
   eleventyConfig.addPassthroughCopy("src/media");
   eleventyConfig.addPassthroughCopy("src/guitar-solid.svg");
   // Or for SVG:

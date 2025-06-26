@@ -16,70 +16,54 @@ title: Orion Leidl Wilson
       title="Atom Feed"
       href="/feed.xml"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.jade.min.css"
-    />
     <link rel="me" href="https://github.com/orionlw" />
     <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
     <link rel="icon" href="/guitar-solid.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="/darkmode.css" />
   </head>
   <body>
-    <header class="container" style="margin-bottom: 1rem">
-      <h1>{{ title | default : "Orion Leidl Wilson" }}</h1>
-    </header>
-
-    <nav class="container" style="margin-bottom: 1rem">
-      <ul class="nav">
-        <li><a href="/">Home</a></li>
-        <li><a href="/blog" class="contrast">Blog</a></li>
-        <li><a href="/about">About Me</a></li>
-      </ul>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/blog" class="contrast">Blog</a>
+      <a href="/about">About Me</a>
     </nav>
 
-    <main class="container" style="margin-bottom: 2rem">
+    <main class="container" style="margin-top: 3.5rem">
+      {% if title and page.url != "/" %}
+      <h1>{{ title }}</h1>
+      {% endif %}
       {{ content }}
     </main>
 
-    <footer class="container" style="margin-top: 2rem">
-      {% if page.url != "/" %}
-      <div class="footer-links" style="margin: 2em 0 1em 0">
-        <a href="/" title="Back to Home">← Back to Home</a>
+    <footer class="container">
+      <div class="flex one two-600">
+        <div>
+          <small> © 2025 Orion Leidl Wilson </small>
+        </div>
+        <div class="social-icons" style="text-align: right">
+          <a href="https://github.com/orionlw" title="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://mastodon.social/@orionlw" rel="me" title="Mastodon"
+            ><i class="fab fa-mastodon"></i
+          ></a>
+          <a href="https://pixelfed.social/orionlw" rel="me" title="Pixelfed"
+            ><i class="fas fa-camera-retro"></i
+          ></a>
+          <a href="https://letterboxd.com/orionlw" title="Letterboxd"
+            ><i class="fab fa-letterboxd"></i
+          ></a>
+          <a href="mailto:orionlw@pm.me" title="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a href="/feed.xml" title="Atom Feed"><i class="fas fa-rss"></i></a>
+        </div>
       </div>
-      {% endif %}
-      <div style="height: 1em"></div>
-      <div class="social-icons" style="margin-bottom: 1.5em">
-        <a href="https://github.com/orionlw" title="GitHub">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-        <a href="https://mastodon.social/@orionlw" rel="me" title="Mastodon">
-          <i class="fab fa-mastodon"></i> Mastodon
-        </a>
-        <a href="https://pixelfed.social/orionlw" rel="me" title="Pixelfed">
-          <i class="fas fa-camera-retro"></i> Pixelfed
-        </a>
-        <a href="https://letterboxd.com/orionlw" title="Letterboxd">
-          <i class="fab fa-letterboxd"></i> Letterboxd
-        </a>
-        <a href="mailto:orionlw@pm.me" title="Email">
-          <i class="fas fa-envelope"></i> Email
-        </a>
-        <a href="/feed.xml" title="Atom Feed">
-          <i class="fas fa-rss"></i> Atom Feed
-        </a>
-      </div>
-      <p>
-        © 2025 Orion Leidl Wilson. Site made with
-        <a href="https://www.11ty.dev/" target="_blank" rel="noopener">11ty</a>
-        and
-        <a href="https://picocss.com/" target="_blank" rel="noopener"
-          >pico CSS</a
-        >.
-      </p>
     </footer>
   </body>
 </html>

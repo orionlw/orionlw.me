@@ -7,6 +7,7 @@ description: "Welcome to my personal website! Here you will find information abo
 
 <main class="container">
   <section>
+    <h1>Orion Leidl Wilson</h1>
     <p>
       Welcome to my personal website! Here you will find information about me,
       my projects, and my blog posts. Feel free to explore and connect with me!
@@ -16,37 +17,38 @@ description: "Welcome to my personal website! Here you will find information abo
   </section>
   <section>
     <h2>Latest Posts</h2>
-    {% for post in collections.post | reverse | slice(0, 3) %}
-    <article class="blog-preview">
-      <h3>
-        <a href="{{ post.url }}">{{ post.data.title }}</a>
-      </h3>
-      <small
-        style="display: block; margin-bottom: 0.5em"
-        >{{ post.date | date("yyyy-MM-dd") }}</small
-      >
-      {% if post.data.image %}
-      <a href="{{ post.url }}">
-        <img
-          src="{{ post.data.image }}"
-          alt="{{ post.data.title }}"
-          style="
-            max-width: auto;
-            height: auto;
-            display: block;
-            margin: 0 auto 1em auto;
-          "
-        />
-      </a>
-      {% endif %}
-      <p>
-        {% if post.data.description %}
-        {{ post.data.description }}
-        {% else %}
-        {{ post.templateContent | striptags | truncate(200, true, "…") }}
+    <div class="flex three">
+      {% for post in collections.post | reverse | slice(0, 3) %}
+      <article class="card blog-preview">
+        <header>
+          <h3 style="margin-bottom: 0.5em">
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
+          </h3>
+          <small>{{ post.date | date("yyyy-MM-dd") }}</small>
+        </header>
+        {% if post.data.image %}
+        <a href="{{ post.url }}">
+          <img
+            src="{{ post.data.image }}"
+            alt="{{ post.data.title }}"
+            style="
+              max-width: 100%;
+              height: auto;
+              display: block;
+              margin: 0 auto 1em auto;
+            "
+          />
+        </a>
         {% endif %}
-      </p>
-    </article>
-    {% endfor %}
+        <p>
+          {% if post.data.description %}
+          {{ post.data.description }}
+          {% else %}
+          {{ post.templateContent | striptags | truncate(200, true, "…") }}
+          {% endif %}
+        </p>
+      </article>
+      {% endfor %}
+    </div>
   </section>
 </main>
