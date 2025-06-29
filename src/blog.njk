@@ -33,7 +33,7 @@ permalink: "/blog/index.html"
         {% if post.data.description %}
         {{ post.data.description }}
         {% else %}
-        {{ post.templateContent | striptags | truncate(200, true, "…") }}
+        {{ post.templateContent | striptags | truncate(120, true, "…") }}
         {% endif %}
       </p>
     </article>
