@@ -1,11 +1,10 @@
 export default {
-	title: "Eleventy Base Blog v9",
-	url: "https://example.com/",
+	title: "Orion Leidl Wilson",
+	url: "https://orionlw.me",
 	language: "en",
-	description: "I am writing about my experiences as a naval navel-gazer.",
+	description: "I am musician and composer located in Grand Pré, Nova Scotia, Canada",
 	author: {
-		name: "Your Name Here",
-		email: "youremailaddress@example.com",
-		url: "https://example.com/about-me/"
+		name: "Orion Leidl Wilson",
+		email: "orionlw@pm.me",
 	}
 }
