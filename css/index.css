@@ -10,34 +10,34 @@
 		Courier, monospace;
 }
 
-/* Theme colors */
+/* Everforest Medium Dark color scheme */
 :root {
-	--color-gray-20: #e0e0e0;
-	--color-gray-50: #c0c0c0;
-	--color-gray-90: #333;
+	--color-gray-20: #495156;
+	--color-gray-50: #7a8478;
+	--color-gray-90: #d3c6aa;
 
-	--background-color: #fff;
+	--background-color: #2b3339;
 
-	--text-color: var(--color-gray-90);
-	--text-color-link: #082840;
-	--text-color-link-active: #5f2b48;
-	--text-color-link-visited: #17050f;
+	--text-color: #d3c6aa;
+	--text-color-link: #a7c080;
+	--text-color-link-active: #e69875;
+	--text-color-link-visited: #dbbc7f;
 
 	--syntax-tab-size: 2;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--color-gray-20: #e0e0e0;
-		--color-gray-50: #c0c0c0;
-		--color-gray-90: #dad8d8;
+		--color-gray-20: #495156;
+		--color-gray-50: #7a8478;
+		--color-gray-90: #d3c6aa;
 
-		/* --text-color is assigned to --color-gray-_ above */
-		--text-color-link: #1493fb;
-		--text-color-link-active: #6969f7;
-		--text-color-link-visited: #a6a6f8;
+		--background-color: #2b3339;
 
-		--background-color: #15202b;
+		--text-color: #d3c6aa;
+		--text-color-link: #a7c080;
+		--text-color-link-active: #e69875;
+		--text-color-link-visited: #dbbc7f;
 	}
 }
 
