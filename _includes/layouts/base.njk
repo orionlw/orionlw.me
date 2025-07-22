@@ -63,10 +63,18 @@
 		</main>
 
 		<footer>
-			<p>
-				<em>Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a></em>
-			</p>
-		</footer>
+    <p>
+        <em>Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a></em>
+    </p>
+    <ul class="social-links" style="list-style:none; padding:0; display:flex; flex-wrap:wrap; gap:0.5em;">
+        <li><a href="https://mastodon.social/@orionlw" rel="me">Mastodon</a></li>
+        <li><a href="https://pixelfed.social/orionlw" rel="me">Pixelfed</a></li>
+        <li><a href="https://github.com/orionlw" rel="me">GitHub</a></li>
+        <li><a href="https://listenbrainz.org/user/orionlw" rel="me">ListenBrainz</a></li>
+        <li><a href="https://letterboxd.com/orionlw" rel="me">Letterboxd</a></li>
+        <li><a href="mailto:orionlw@pm.me">Email</a></li>
+    </ul>
+</footer>
 
 		<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
 		<script type="module" src="{% getBundleFileUrl "js" %}"></script>
