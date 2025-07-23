@@ -1,11 +1,4 @@
 _site/
 node_modules/
 .cache
-src/.obsidian/app.json
-src/.obsidian/appearance.json
-src/.obsidian/core-plugins.json
-src/.obsidian/workspace.json
-content/blog/.obsidian/app.json
-content/blog/.obsidian/appearance.json
-content/blog/.obsidian/core-plugins.json
-content/blog/.obsidian/workspace.json
+content/blog/.obsidian
