@@ -235,6 +235,22 @@ header {
 	margin-right: 1em;
 }
 
+/* Remove list-style from post-metadata and links-nextprev lists */
+ul.post-metadata,
+ul.links-nextprev {
+	list-style: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+ul.post-metadata li,
+ul.links-nextprev li {
+	margin: 0;
+}
+ul.post-metadata li::marker,
+ul.links-nextprev li::marker {
+	content: none;
+}
+
 /* Social Links - override Pico's list style if needed */
 ul.social-links {
 	list-style: none;
