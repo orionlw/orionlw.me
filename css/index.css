@@ -1,27 +1,28 @@
+/* Pico CSS is loaded via CDN. This file contains custom overrides and theme settings. */
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Space+Mono:wght@400;700&display=swap");
+
 /* Defaults */
 :root {
-	--font-family: "Avenir Next", "Avenir", -apple-system, BlinkMacSystemFont,
-		segoe ui, helvetica neue, Adwaita Sans, Cantarell, Ubuntu, roboto, noto,
-		helvetica, arial, sans-serif;
-	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono,
-		Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono,
+	--font-family: "IBM Plex Mono", "Avenir Next", "Avenir", -apple-system,
+		BlinkMacSystemFont, segoe ui, helvetica neue, Adwaita Sans, Cantarell,
+		Ubuntu, roboto, noto, helvetica, arial, sans-serif;
+	--font-family-monospace: "Space Mono", Consolas, Menlo, Monaco, Andale Mono WT,
+		Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono,
 		Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New,
 		Courier, monospace;
-}
 
-/* Everforest Medium Dark color scheme */
-:root {
-	--color-gray-20: #495156;
+	--color-gray-20: #3a3f4a;
 	--color-gray-50: #7a8478;
-	--color-gray-90: #d3c6aa;
-
-	--background-color: #2b3339;
-
-	--text-color: #d3c6aa;
-	--text-color-link: #a7c080;
-	--text-color-link-active: #e69875;
-	--text-color-link-visited: #dbbc7f;
-
+	--color-gray-90: #e0e6f0;
+	--background-color: #23272e;
+	--text-color: #e0e6f0;
+	--text-color-link: #5de4c7;
+	--text-color-link-active: #ffb86c;
+	--text-color-link-visited: #c792ea;
+	--accent-color: #ffb86c;
+	--accent-color2: #5de4c7;
+	--accent-color3: #c792ea;
 	--syntax-tab-size: 2;
 }
 
@@ -109,6 +110,7 @@ li {
 
 a[href] {
 	color: var(--text-color-link);
+	transition: color 0.2s;
 }
 a[href]:visited {
 	color: var(--text-color-link-visited);
@@ -127,83 +129,16 @@ main :first-child {
 }
 
 header {
-	border-bottom: 1px dashed var(--color-gray-20);
-}
-
-#skip-link {
-	text-decoration: none;
-	background: var(--background-color);
-	color: var(--text-color);
-	padding: 0.5rem 1rem;
-	border: 1px solid var(--color-gray-90);
-	border-radius: 2px;
-}
-
-/* Prevent visually-hidden skip link fom pushing content around when focused */
-#skip-link.visually-hidden:focus {
-	position: absolute;
-	top: 1rem;
-	left: 1rem;
-	/* Ensure it is positioned on top of everything else when it is shown */
-	z-index: 999;
-}
-
-.links-nextprev {
-	display: flex;
-	justify-content: space-between;
-	gap: 0.5em 1em;
-	list-style: "";
-	border-top: 1px dashed var(--color-gray-20);
-	padding: 1em 0;
-}
-.links-nextprev > * {
-	flex-grow: 1;
-}
-.links-nextprev-next {
-	text-align: right;
-}
-
-table {
-	margin: 1em 0;
-}
-table td,
-table th {
-	padding-right: 1em;
-}
-
-pre,
-code {
-	font-family: var(--font-family-monospace);
-}
-pre:not([class*="language-"]) {
-	margin: 0.5em 0;
-	line-height: 1.375; /* 22px /16 */
-	-moz-tab-size: var(--syntax-tab-size);
-	-o-tab-size: var(--syntax-tab-size);
-	tab-size: var(--syntax-tab-size);
-	-webkit-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-	direction: ltr;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	overflow-x: auto;
-}
-code {
-	word-break: break-all;
-}
-
-/* Header */
-header {
 	display: flex;
 	gap: 1em;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 	padding: 1em;
+	border-bottom: 2px solid var(--accent-color2);
+	box-shadow: 0 2px 8px rgba(93, 228, 199, 0.08);
 }
+
 .home-link {
 	flex-grow: 1;
 	font-size: 1em; /* 16px /16 */
@@ -311,4 +246,16 @@ ul.social-links li {
 }
 ul.social-links li::marker {
 	content: none;
+}
+
+button,
+input,
+select,
+textarea {
+	font-family: "IBM Plex Mono", monospace;
+	background: #23272e;
+	color: var(--accent-color2);
+	border: 1px solid var(--accent-color3);
+	border-radius: 4px;
+	padding: 0.5em 1em;
 }
