@@ -300,19 +300,15 @@ header {
 	margin-right: 1em;
 }
 
-/* Social Links */
+/* Social Links - override Pico's list style if needed */
 ul.social-links {
-	list-style: none !important;
-	padding-left: 0 !important;
+	list-style: none;
+	padding-left: 0;
+	margin-left: 0;
 }
 ul.social-links li {
-	margin: 0 !important;
-	list-style-type: none !important;
-	list-style: none !important;
-	padding-left: 0 !important;
-	margin-left: 0 !important;
+	margin: 0;
 }
-
 ul.social-links li::marker {
-	content: none !important;
+	content: none;
 }
