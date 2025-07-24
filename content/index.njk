@@ -7,8 +7,14 @@ const eleventyNavigation = {
 const numberOfLatestPostsToShow = 3;
 ---
 
-{% set postsCount = collections.posts | length %} {% set latestPostsCount =
-postsCount | min(numberOfLatestPostsToShow) %}
+<h2>Electric Bassist & Composer</h2>
+<p>
+	Grand Pré, Nova Scotia, Canada<br />
+
+	{% set postsCount = collections.posts | length %} {% set latestPostsCount =
+	postsCount | min(numberOfLatestPostsToShow) %}
+</p>
+
 <h1>
 	Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}
 </h1>
