@@ -2,42 +2,42 @@
 
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Space+Mono:wght@400;700&display=swap");
 
-/* Defaults */
 :root {
-	--font-family: "IBM Plex Mono", "Avenir Next", "Avenir", -apple-system,
-		BlinkMacSystemFont, segoe ui, helvetica neue, Adwaita Sans, Cantarell,
-		Ubuntu, roboto, noto, helvetica, arial, sans-serif;
-	--font-family-monospace: "Space Mono", Consolas, Menlo, Monaco, Andale Mono WT,
-		Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono,
-		Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New,
-		Courier, monospace;
-
-	--color-gray-20: #3a3f4a;
-	--color-gray-50: #7a8478;
-	--color-gray-90: #e0e6f0;
-	--background-color: #23272e;
-	--text-color: #f4f4f2;
-	--text-color-link: #5de4c7;
+	/* Light mode (default) */
+	--background-color: #f4f4f2;
+	--text-color: #23272e;
+	--text-color-link: #00796b;
 	--text-color-link-active: #ffb86c;
 	--text-color-link-visited: #c792ea;
 	--accent-color: #ffb86c;
 	--accent-color2: #5de4c7;
 	--accent-color3: #c792ea;
+	--color-gray-20: #e0e6f0;
+	--color-gray-50: #7a8478;
+	--color-gray-90: #3a3f4a;
+	--font-family: "Avenir Next", "Avenir", -apple-system, BlinkMacSystemFont,
+		segoe ui, helvetica neue, Adwaita Sans, Cantarell, Ubuntu, roboto, noto,
+		helvetica, arial, sans-serif;
+	--font-family-monospace: "Space Mono", Consolas, Menlo, Monaco, Andale Mono WT,
+		Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono,
+		Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New,
+		Courier, monospace;
 	--syntax-tab-size: 2;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--color-gray-20: #495156;
-		--color-gray-50: #7a8478;
-		--color-gray-90: #d3c6aa;
-
-		--background-color: #2b3339;
-
+		--background-color: #23272e;
 		--text-color: #f4f4f2;
-		--text-color-link: #a7c080;
-		--text-color-link-active: #e69875;
-		--text-color-link-visited: #dbbc7f;
+		--text-color-link: #5de4c7;
+		--text-color-link-active: #ffb86c;
+		--text-color-link-visited: #c792ea;
+		--accent-color: #ffb86c;
+		--accent-color2: #5de4c7;
+		--accent-color3: #c792ea;
+		--color-gray-20: #3a3f4a;
+		--color-gray-50: #7a8478;
+		--color-gray-90: #e0e6f0;
 	}
 }
 
