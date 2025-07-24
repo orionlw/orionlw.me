@@ -4,17 +4,17 @@
 
 :root {
 	/* Light mode (default) */
-	--background-color: #f4f4f2;
-	--text-color: #23272e;
-	--text-color-link: #00796b;
-	--text-color-link-active: #ffb86c;
-	--text-color-link-visited: #c792ea;
-	--accent-color: #ffb86c;
-	--accent-color2: #5de4c7;
-	--accent-color3: #c792ea;
-	--color-gray-20: #e0e6f0;
-	--color-gray-50: #7a8478;
-	--color-gray-90: #3a3f4a;
+	--background-color: #fefae0;
+	--text-color: #283618;
+	--text-color-link: #606c38;
+	--text-color-link-active: #bc6c25;
+	--text-color-link-visited: #bc6c25; /* instead of #dda15e */
+	--accent-color: #dda15e;
+	--accent-color2: #606c38;
+	--accent-color3: #bc6c25;
+	--color-gray-20: #fefae0;
+	--color-gray-50: #dda15e;
+	--color-gray-90: #283618;
 	--font-family: "Avenir Next", "Avenir", -apple-system, BlinkMacSystemFont,
 		segoe ui, helvetica neue, Adwaita Sans, Cantarell, Ubuntu, roboto, noto,
 		helvetica, arial, sans-serif;
@@ -27,17 +27,17 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--background-color: #23272e;
-		--text-color: #f4f4f2;
-		--text-color-link: #5de4c7;
-		--text-color-link-active: #ffb86c;
-		--text-color-link-visited: #c792ea;
-		--accent-color: #ffb86c;
-		--accent-color2: #5de4c7;
-		--accent-color3: #c792ea;
-		--color-gray-20: #3a3f4a;
-		--color-gray-50: #7a8478;
-		--color-gray-90: #e0e6f0;
+		--background-color: #283618;
+		--text-color: #fefae0;
+		--text-color-link: #dda15e; /* Brighter yellow for links */
+		--text-color-link-active: #fefae0; /* White for active/hover */
+		--text-color-link-visited: #bc6c25; /* Orange for visited */
+		--accent-color: #dda15e;
+		--accent-color2: #bc6c25;
+		--accent-color3: #606c38;
+		--color-gray-20: #606c38;
+		--color-gray-50: #dda15e;
+		--color-gray-90: #fefae0;
 	}
 }
 
@@ -262,16 +262,4 @@ ul.social-links li {
 }
 ul.social-links li::marker {
 	content: none;
-}
-
-button,
-input,
-select,
-textarea {
-	font-family: "IBM Plex Mono", monospace;
-	background: #23272e;
-	color: var(--accent-color2);
-	border: 1px solid var(--accent-color3);
-	border-radius: 4px;
-	padding: 0.5em 1em;
 }
