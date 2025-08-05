@@ -1,0 +1,25 @@
+{
+  "name": "orionlw.me",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orionlw/orionlw.me.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orionlw/orionlw.me/issues"
+  },
+  "homepage": "https://github.com/orionlw/orionlw.me#readme",
+  "description": "",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-navigation": "^1.0.4"
+  }
+}

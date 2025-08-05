@@ -1,0 +1,136 @@
+/* playfair-display-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    src: url("_includes/playfair.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+    font-family: sans-serif;
+    max-width: 80ch;
+    margin: 0 auto;
+    padding: 0 1rem 24px;
+    background-color: #fdfcf8;
+    color: #1a472a;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display", serif;
+    color: #1a472a;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #d4a574;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    margin-bottom: 1.2rem;
+}
+
+ul,
+ol {
+    margin-bottom: 1.2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+strong {
+    color: #2d5a3d;
+}
+
+/* Navigation Styles */
+.main-nav {
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    border-bottom: 2px solid #d4a574;
+}
+
+.main-nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.main-nav > ul > li {
+    margin: 0;
+}
+
+.main-nav > ul > li > a {
+    text-decoration: none;
+    color: #1a472a;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    font-family: "Playfair Display", serif;
+}
+
+.main-nav > ul > li > a:hover {
+    background-color: #2d5a3d;
+    color: #fdfcf8;
+}
+
+.main-nav > ul > li > a[aria-current="page"] {
+    background-color: #1a472a;
+    color: #fdfcf8;
+}
+
+/* Content Links */
+a {
+    color: #1a472a;
+    text-decoration-color: #d4a574;
+}
+
+a:hover {
+    color: #2d5a3d;
+}
+
+/* Main content spacing */
+main {
+    padding-top: 1rem;
+}
+
+/* Responsive typography */
+@media (max-width: 600px) {
+    body {
+        padding: 0 0.5rem 24px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .main-nav > ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
