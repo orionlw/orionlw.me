@@ -16,9 +16,10 @@ eleventyNavigation:
 <p class="lead">Bassist and composer working in jazz, contemporary classical, and electronic music.</p>
 
 **[Currently](/currently/)** — What I'm working on  
-**[Shows](/shows/)** — Performance calendar
-**[Media](/media/)** — Audio samples and recordings
+**[Shows](/shows/)** — Performance calendar  
+**[Media](/media/)** — Audio samples and recordings  
 **[Music](/music/)** — Portfolio and compositions
+
 
 **[Mitchell McFadgen Trio](https://mitchellmcfadgentrio.live/)** — Jazz standards and original arrangements
 
