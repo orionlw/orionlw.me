@@ -17,6 +17,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/bundle.css");
   eleventyConfig.addPassthroughCopy("src/_includes/playfair.woff2");
+  eleventyConfig.addPassthroughCopy("src/favicon.ico");
 
   // Configure dev server settings
   eleventyConfig.setServerOptions({
@@ -45,6 +46,27 @@ export default function (eleventyConfig) {
       month: "long",
       day: "numeric",
     });
+  });
+
+  // RSS feed date filter
+  eleventyConfig.addFilter("dateToRfc3339", (date) => {
+    return new Date(date).toISOString();
+  });
+
+  // Get newest collection item date
+  eleventyConfig.addFilter("getNewestCollectionItemDate", (collection) => {
+    if (!collection || collection.length === 0) {
+      return new Date();
+    }
+    return new Date(Math.max(...collection.map((item) => new Date(item.date))));
+  });
+
+  // HTML to absolute URLs for RSS
+  eleventyConfig.addFilter("htmlToAbsoluteUrls", (htmlContent, base) => {
+    if (!htmlContent) return htmlContent;
+    return htmlContent
+      .replace(/src="\/([^"]+)"/g, `src="${base}/$1"`)
+      .replace(/href="\/([^"]+)"/g, `href="${base}/$1"`);
   });
 
   // Configure Markdown with plugins
@@ -107,6 +129,11 @@ export default function (eleventyConfig) {
   } catch (e) {
     console.log("Note: Image plugin not available in this Eleventy version");
   }
+
+  // Create blog collection
+  eleventyConfig.addCollection("blog", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/blog/*.md");
+  });
 
   // Configure directory options
   return {

@@ -1,0 +1,31 @@
+{
+  "title": "Orion Leidl Wilson",
+  "description": "Electric Bassist & Composer from Grand Pré, Nova Scotia. Specializing in jazz, contemporary classical, and electronic music.",
+  "url": "https://orionlw.me",
+  "author": {
+    "name": "Orion Leidl Wilson",
+    "email": "orionlw@pm.me",
+    "mastodon": "https://mastodon.social/@orionlw",
+    "github": "https://github.com/orionlw"
+  },
+  "location": "Grand Pré, Nova Scotia, Canada",
+  "currentYear": "2025",
+  "social": {
+    "mastodon": "https://mastodon.social/@orionlw",
+    "github": "https://github.com/orionlw",
+    "letterboxd": "https://letterboxd.com/orionlw/",
+    "listenbrainz": "https://listenbrainz.org/user/orionlw"
+  },
+  "projects": [
+    {
+      "name": "Mitchell McFadgen Trio",
+      "url": "https://mitchellmcfadgentrio.live/",
+      "description": "Guitar trio performing standards, arrangements, and original compositions"
+    },
+    {
+      "name": "Nightdogs",
+      "url": "https://nightdogs.xyz",
+      "description": "Nightdogs are hotdogs that you eat in the middle of the night"
+    }
+  ]
+}

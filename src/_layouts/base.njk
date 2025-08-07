@@ -5,10 +5,38 @@ title: Orion Leidl Wilson
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/bundle.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
+    <meta name="description" content="{{ description or 'Electric Bassist & Composer from Grand Pré, Nova Scotia. Specializing in jazz, contemporary classical, and electronic music.' }}">
+    <meta name="author" content="Orion Leidl Wilson">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.url | absoluteUrl(site.url) }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description or 'Electric Bassist & Composer from Grand Pré, Nova Scotia. Specializing in jazz, contemporary classical, and electronic music.' }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="{{ page.url | absoluteUrl(site.url) }}">
+    <meta property="twitter:title" content="{{ title }}">
+    <meta property="twitter:description" content="{{ description or 'Electric Bassist & Composer from Grand Pré, Nova Scotia. Specializing in jazz, contemporary classical, and electronic music.' }}">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="/_includes/playfair.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/bundle.css">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ page.url | absoluteUrl(site.url) }}">
+
+    <!-- Theme color -->
+    <meta name="theme-color" content="#1a472a">
   </head>
   <body>
     <nav class="main-nav">
