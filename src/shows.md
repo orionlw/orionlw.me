@@ -19,16 +19,16 @@ The trio performs regularly throughout Nova Scotia at venues including Trident C
 
 ## Other Performance Highlights
 
-**Creative Music Workshop 2025** - Halifax Central Library (Jerry Granelli Scholarship)  
+**Creative Music Workshop 2025** - Halifax Central Library (Jerry Granelli Scholarship)
 **Student Composer Recital** - Acadia University, premiered "The Future Mono"
 
-## Local Scene
+<!--## Local Scene
 
-**Fo'c'sle Jazz Jam** - Chester, NS  
-Regular participant in Nicola Miller's welcoming community jam session.
+**Fo'c'sle Jazz Jam** - Chester, NS
+Regular participant in Nicola Miller's welcoming community jam session.-->
 
 ## Booking
 
-For Mitchell McFadgen Trio bookings, visit their [events page](https://mitchellmcfadgentrio.live/events/).
+For Mitchell McFadgen Trio bookings, visit their [contact page](https://mitchellmcfadgentrio.live/contact/).
 
 For other projects or session work: **[orionlw@pm.me](mailto:orionlw@pm.me)**

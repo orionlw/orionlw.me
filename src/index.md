@@ -17,7 +17,7 @@ Welcome! I'm a bassist and composer exploring jazz, contemporary classical, and 
 
 ## Explore
 
-- **[Blog](/blog/)** - Musical thoughts and recent experiences
+- **[Currently](/current/)** - What I'm into right now
 - **[Shows](/shows/)** - Performance calendar and recent gigs  
 - **[Media](/media/)** - Audio samples and recordings
 - **[Music](/music/)** - Portfolio and compositions
@@ -28,26 +28,9 @@ Welcome! I'm a bassist and composer exploring jazz, contemporary classical, and 
 - **SUPERVI11AIN** - Experimental drum & bass duo
 - **Doublespeak** - Singer-songwriter quartet
 
-## Latest from the Blog
+## Writing Elsewhere
 
-{% set latestPosts = collections.blog | reverse | limit(3) %}
-{% if latestPosts.length %}
-<div class="latest-blog-posts">
-{% for post in latestPosts %}
-  <article class="blog-post-preview">
-    <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-    <time datetime="{{ post.data.date | dateToRfc3339 }}" class="post-date">
-      {{ post.data.date | readableDate }}
-    </time>
-    {% if post.data.excerpt %}
-      <p>{{ post.data.excerpt }}</p>
-    {% endif %}
-    <a href="{{ post.url }}" class="read-more">Read more</a>
-  </article>
-{% endfor %}
-</div>
-<p><a href="/blog/" class="read-more">View all blog posts →</a></p>
-{% endif %}
+I blog at **[Nightdogs](https://nightdogs.xyz)** and post music thoughts on **[Mastodon]({{ site.social.mastodon }})**.
 
 ## Connect
 

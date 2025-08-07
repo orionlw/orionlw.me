@@ -1,20 +1,24 @@
-/* playfair-display-regular - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: "Playfair Display";
-    font-style: normal;
-    font-weight: 400;
-    src: url("_includes/playfair.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
+/* Import modern Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap");
 
 body {
-    font-family: sans-serif;
+    font-family:
+        "Inter",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        system-ui,
+        sans-serif;
+    font-weight: 400;
+    font-size: 16px;
     max-width: 80ch;
     margin: 0 auto;
     padding: 0 1rem 24px;
     background-color: #fdfcf8;
     color: #1a472a;
-    line-height: 1.6;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -23,14 +27,19 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Playfair Display", serif;
+    font-family: "Source Serif Pro", Georgia, "Times New Roman", serif;
     color: #1a472a;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
 }
 
 h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: clamp(2.25rem, 5vw, 3.5rem);
+    font-weight: 700;
     margin-bottom: 0.5rem;
+    letter-spacing: -0.03em;
 }
 
 h2 {
@@ -38,15 +47,39 @@ h2 {
     margin-bottom: 1rem;
     border-bottom: 1px solid #d4a574;
     padding-bottom: 0.5rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 600;
 }
 
 h3 {
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    font-weight: 600;
 }
 
 p {
     margin-bottom: 1.2rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #2d4a3d;
+    font-weight: 400;
+}
+
+/* Large text for emphasis */
+.lead {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #1a472a;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+/* Small text */
+small {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #8b6f47;
 }
 
 ul,
@@ -59,7 +92,46 @@ li {
 }
 
 strong {
+    color: #1a472a;
+    font-weight: 600;
+}
+
+em {
+    font-style: italic;
     color: #2d5a3d;
+}
+
+/* Better list styling */
+ul li,
+ol li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Code and monospace */
+code {
+    font-family: "SF Mono", "Monaco", "Inconsolata", "Roboto Mono", monospace;
+    font-size: 0.9em;
+    background-color: rgba(212, 165, 116, 0.15);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    color: #1a472a;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid #d4a574;
+    margin: 2rem 0;
+    padding: 1rem 1.5rem;
+    background-color: rgba(212, 165, 116, 0.05);
+    font-style: italic;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: #2d5a3d;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
 }
 
 /* Links */
@@ -106,7 +178,7 @@ a:focus {
     padding: 0.4rem 0.8rem;
     border-radius: 4px;
     transition: all 0.2s ease;
-    font-family: "Playfair Display", serif;
+    font-family: "Inter", sans-serif;
     border: 1px solid transparent;
     display: inline-block;
     font-size: 0.9rem;
@@ -274,7 +346,7 @@ main {
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: clamp(1.875rem, 4vw, 2.5rem);
     }
 
     .main-nav > ul {
@@ -302,7 +374,7 @@ main {
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: clamp(1.5rem, 3.5vw, 2rem);
     }
 
     .main-nav > ul {
@@ -744,6 +816,37 @@ main {
 
     .footer-text {
         color: #a8d4a8;
+    }
+
+    p {
+        color: #c8e6c8;
+    }
+
+    .lead {
+        color: #e8f5e8;
+    }
+
+    small {
+        color: #a8d4a8;
+    }
+
+    strong {
+        color: #e8f5e8;
+    }
+
+    em {
+        color: #c8e6c8;
+    }
+
+    code {
+        background-color: rgba(139, 111, 71, 0.2);
+        color: #e8f5e8;
+    }
+
+    blockquote {
+        border-left-color: #8b6f47;
+        background-color: rgba(139, 111, 71, 0.1);
+        color: #c8e6c8;
     }
 }
 

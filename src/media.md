@@ -11,7 +11,13 @@ Audio samples, recordings, and multimedia content.
 
 ## Recordings
 
-**Coming Soon** - Audio samples from recent performances and compositions are currently being prepared.
+### Mitchell McFadgen Trio
+
+Recordings available at **[mitchellmcfadgentrio.live/music](https://mitchellmcfadgentrio.live/music/)**
+
+### Other Projects
+
+**Coming Soon** - Audio samples from SUPERVI11AIN, Doublespeak, and solo compositions are currently being prepared.
 
 ## Compositions
 

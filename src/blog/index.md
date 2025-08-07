@@ -1,9 +1,7 @@
 ---
 title: Blog
 layout: base.njk
-eleventyNavigation:
-  key: "Blog"
-  order: 2
+
 pagination:
   data: collections.blog
   size: 10
