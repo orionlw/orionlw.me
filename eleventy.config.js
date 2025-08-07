@@ -48,6 +48,26 @@ export default function (eleventyConfig) {
     });
   });
 
+  // Add limit filter for arrays
+  eleventyConfig.addFilter("limit", (array, limit) => {
+    return array.slice(0, limit);
+  });
+
+  // Add simple date filter
+  eleventyConfig.addFilter("date", (date, format) => {
+    if (format === "Y-m-d") {
+      return new Date(date).toISOString().split("T")[0];
+    }
+    return new Date(date).toISOString();
+  });
+
+  // Add absoluteUrl filter
+  eleventyConfig.addFilter("absoluteUrl", (url, base) => {
+    if (!base || !url) return url;
+    if (url.startsWith("http")) return url;
+    return new URL(url, base).href;
+  });
+
   // RSS feed date filter
   eleventyConfig.addFilter("dateToRfc3339", (date) => {
     return new Date(date).toISOString();

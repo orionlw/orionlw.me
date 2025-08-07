@@ -3,7 +3,7 @@ title: Music
 layout: base.njk
 eleventyNavigation:
   key: "Music"
-  order: 3
+  order: 4
 ---
 
 # Music

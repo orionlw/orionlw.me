@@ -40,7 +40,7 @@ Based in the beautiful landscape of Nova Scotia, I draw inspiration from both th
 {% for post in latestPosts %}
   <article class="blog-post-preview">
     <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-    <time datetime="{{ post.data.date | date('Y-m-d') }}" class="post-date">
+    <time datetime="{{ post.data.date | dateToRfc3339 }}" class="post-date">
       {{ post.data.date | readableDate }}
     </time>
     {% if post.data.excerpt %}
