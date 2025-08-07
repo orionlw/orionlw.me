@@ -46,7 +46,7 @@ eleventyNavigation:
 
 ## Looking Forward To
 
-- **New composition projects** - Working on trio compositions this fall despite ArtsNS grant rejection
+- **New composition projects** - Working on trio compositions this fall.
 ---
 
 *This page gets updated every few months with whatever's capturing my attention.*

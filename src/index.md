@@ -17,14 +17,17 @@ eleventyNavigation:
 
 ## Explore
 
-**[Currently](/current/)** - What I'm into right now  
-**[Shows](/shows/)** - Performance calendar and recent gigs  
-**[Media](/media/)** - Audio samples and recordings  
+**[Currently](/currently/)** - What I'm into right now
+**[Shows](/shows/)** - Performance calendar and recent gigs
+**[Media](/media/)** - Audio samples and recordings
 **[Music](/music/)** - Portfolio and compositions
 
 ## Active Projects
 
 - **[Mitchell McFadgen Trio](https://mitchellmcfadgentrio.live/)** - Jazz standards and original arrangements
+
+## Former Projects
+
 - **SUPERVI11AIN** - Experimental drum & bass duo
 - **Doublespeak** - Singer-songwriter quartet
 
@@ -32,7 +35,7 @@ eleventyNavigation:
 
 ## Writing Elsewhere
 
-I blog at **[Nightdogs](https://nightdogs.xyz)** and post music thoughts on **[Mastodon]({{ site.social.mastodon }})**.
+I blog at **[Nightdogs](https://nightdogs.xyz)** and post thoughts on **[Mastodon]({{ site.social.mastodon }})**.
 
 ---
 

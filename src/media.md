@@ -17,18 +17,18 @@ Recordings available at **[mitchellmcfadgentrio.live/music](https://mitchellmcfa
 
 ### Other Projects
 
-**Coming Soon** - Audio samples from SUPERVI11AIN, Doublespeak, and solo compositions are currently being prepared.
+**Coming Soon**
 
 ## Compositions
 
 - **"The Future Mono"** (2025) - Jazz trio piece exploring technology and human connection
-- **"Frost"** (2025) - Semi-aleotoric solo electric guitar work  
+- **"Frost"** (2025) - Semi-aleotoric solo electric guitar work
 - **"Miniatures I"** (2024) - Collection of solo piano pieces
 
 ## Setup
 
-**Bass**: Fender Jazz Bass with HX Stomp for effects  
-**Recording**: Home studio focused on natural bass tones
+**Bass**: Fender Precision Bass with HX Stomp for effects
+**Recording**: Arturia Interface
 
 ## Usage
 
