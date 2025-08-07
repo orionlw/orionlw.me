@@ -16,6 +16,7 @@ export default function (eleventyConfig) {
   // Add passthrough copy for static assets
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/bundle.css");
+  eleventyConfig.addPassthroughCopy("src/_includes/playfair.woff2");
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
 
   // Configure dev server settings

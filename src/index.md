@@ -13,14 +13,14 @@ eleventyNavigation:
 
 {{ site.location }}
 
-Welcome! I'm a bassist and composer exploring jazz, contemporary classical, and electronic music from the beautiful landscape of Nova Scotia.
+<p class="lead">Welcome! I'm a bassist and composer exploring jazz, contemporary classical, and electronic music from the beautiful landscape of Nova Scotia.</p>
 
 ## Explore
 
-- **[Currently](/current/)** - What I'm into right now
-- **[Shows](/shows/)** - Performance calendar and recent gigs  
-- **[Media](/media/)** - Audio samples and recordings
-- **[Music](/music/)** - Portfolio and compositions
+**[Currently](/current/)** - What I'm into right now  
+**[Shows](/shows/)** - Performance calendar and recent gigs  
+**[Media](/media/)** - Audio samples and recordings  
+**[Music](/music/)** - Portfolio and compositions
 
 ## Active Projects
 
@@ -28,9 +28,13 @@ Welcome! I'm a bassist and composer exploring jazz, contemporary classical, and 
 - **SUPERVI11AIN** - Experimental drum & bass duo
 - **Doublespeak** - Singer-songwriter quartet
 
+---
+
 ## Writing Elsewhere
 
 I blog at **[Nightdogs](https://nightdogs.xyz)** and post music thoughts on **[Mastodon]({{ site.social.mastodon }})**.
+
+---
 
 ## Connect
 
