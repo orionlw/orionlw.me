@@ -603,3 +603,94 @@ main {
         display: none;
     }
 }
+
+/* Media page styles */
+.media-item {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border: 1px solid #d4a574;
+    border-radius: 8px;
+    background-color: rgba(212, 165, 116, 0.05);
+    transition: all 0.2s ease;
+}
+
+.media-item:hover {
+    border-color: #1a472a;
+    background-color: rgba(26, 71, 42, 0.05);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(26, 71, 42, 0.1);
+}
+
+.media-item h4 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    color: #1a472a;
+    font-family: "Playfair Display", serif;
+}
+
+.media-item p {
+    margin-bottom: 0.75rem;
+}
+
+.media-item p:last-child {
+    margin-bottom: 0;
+}
+
+.media-item small {
+    color: #8b6f47;
+    font-style: italic;
+}
+
+.media-item em {
+    color: #8b6f47;
+    font-weight: 600;
+}
+
+/* Technical setup styling */
+.media-item ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.5rem;
+}
+
+.media-item li {
+    margin-bottom: 0.25rem;
+}
+
+/* Dark mode media styles */
+@media (prefers-color-scheme: dark) {
+    .media-item {
+        border-color: #8b6f47;
+        background-color: rgba(139, 111, 71, 0.1);
+    }
+
+    .media-item:hover {
+        border-color: #e8f5e8;
+        background-color: rgba(232, 245, 232, 0.05);
+    }
+
+    .media-item h4 {
+        color: #e8f5e8;
+    }
+
+    .media-item small {
+        color: #a8d4a8;
+    }
+
+    .media-item em {
+        color: #a8d4a8;
+    }
+}
+
+/* Responsive media styles */
+@media (max-width: 768px) {
+    .media-item {
+        margin: 1.5rem 0;
+        padding: 1rem;
+    }
+
+    .media-item:hover {
+        transform: none;
+    }
+}
+
+/* Contact page styles - simplified */

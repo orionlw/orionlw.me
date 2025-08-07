@@ -13,24 +13,20 @@ eleventyNavigation:
 
 {{ site.location }}
 
-Welcome to my website! I'm an emerging artist with a passion for jazz, contemporary classical, and electronic music. I enjoy cats, cycling, beer, coffee, movies, and music.
+Welcome! I'm a bassist and composer exploring jazz, contemporary classical, and electronic music from the beautiful landscape of Nova Scotia.
 
-## About Me
+## Explore
 
-I specialize in electric bass performance and contemporary composition, with experience in jazz ensemble, electronic music, and applied composition. My musical journey spans multiple genres and collaborative projects, from traditional jazz standards to experimental electronic music.
+- **[Blog](/blog/)** - Musical thoughts and recent experiences
+- **[Shows](/shows/)** - Performance calendar and recent gigs  
+- **[Media](/media/)** - Audio samples and recordings
+- **[Music](/music/)** - Portfolio and compositions
 
-Based in the beautiful landscape of Nova Scotia, I draw inspiration from both the rich musical heritage of the Maritimes and contemporary musical innovations. My work explores the intersection of traditional jazz language with modern electronic textures and contemporary classical techniques.
+## Active Projects
 
-## Current Projects
-
-<div class="projects-list">
-{% for project in site.projects %}
-  <div>
-    <h3><a href="{{ project.url }}" target="_blank" rel="noopener">{{ project.name }}</a></h3>
-    <p>{{ project.description }}</p>
-  </div>
-{% endfor %}
-</div>
+- **[Mitchell McFadgen Trio](https://mitchellmcfadgentrio.live/)** - Jazz standards and original arrangements
+- **SUPERVI11AIN** - Experimental drum & bass duo
+- **Doublespeak** - Singer-songwriter quartet
 
 ## Latest from the Blog
 
@@ -53,21 +49,6 @@ Based in the beautiful landscape of Nova Scotia, I draw inspiration from both th
 <p><a href="/blog/" class="read-more">View all blog posts →</a></p>
 {% endif %}
 
-## Get in Touch
+## Connect
 
-<div class="contact-links">
-  <a href="mailto:{{ site.author.email }}" target="_blank" rel="noopener">Email</a>
-  <a href="{{ site.social.mastodon }}" target="_blank" rel="noopener me">Mastodon</a>
-</div>
-
-## Around the Web
-
-<div class="contact-links">
-  <a href="{{ site.social.github }}" target="_blank" rel="noopener">GitHub</a>
-  <a href="{{ site.social.letterboxd }}" target="_blank" rel="noopener">Movie Reviews</a>
-  <a href="{{ site.social.listenbrainz }}" target="_blank" rel="noopener">Music Scrobbles</a>
-</div>
-
----
-
-*Feel free to reach out if you'd like to collaborate or learn more about my work! I'm always interested in connecting with fellow musicians and music enthusiasts.*
+**[Email](mailto:{{ site.author.email }})** • **[Mastodon]({{ site.social.mastodon }})** • **[Contact Page](/contact/)** for collaborations

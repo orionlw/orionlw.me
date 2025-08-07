@@ -1,0 +1,31 @@
+---
+title: Media
+layout: base.njk
+description: "Audio samples, recordings, and multimedia content from Orion Leidl Wilson's musical projects."
+eleventyNavigation:
+  key: "Media"
+  order: 3
+---
+
+# Media
+
+Audio samples, recordings, and multimedia content.
+
+## Recordings
+
+**Coming Soon** - Audio samples from recent performances and compositions are currently being prepared.
+
+## Compositions
+
+- **"The Future Mono"** (2025) - Jazz trio piece exploring technology and human connection
+- **"Frost"** (2025) - Semi-aleotoric solo electric guitar work  
+- **"Miniatures I"** (2024) - Collection of solo piano pieces
+
+## Setup
+
+**Bass**: Fender Jazz Bass with HX Stomp for effects  
+**Recording**: Home studio focused on natural bass tones
+
+## Usage
+
+All material is original work. For licensing: **[orionlw@pm.me](mailto:orionlw@pm.me)**

@@ -2,7 +2,7 @@
 layout: base.njk
 eleventyNavigation:
   key: "CV"
-  order: 3
+  order: 4
 ---
 
 # Orion Leidl Wilson
