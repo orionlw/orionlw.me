@@ -1,55 +1,113 @@
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
+import markdownIt from "markdown-it";
+import markdownItAnchor from "markdown-it-anchor";
+import markdownItToc from "markdown-it-toc-done-right";
 import CleanCSS from "clean-css";
 import { minify } from "terser";
-import path from "path";
-import fs from "fs/promises";
 
-// Add image optimization plugin
-const Image = eleventyConfig.getImagePlugin();
-eleventyConfig.addPlugin(Image, {
-  formats: ["webp", "jpeg"],
-  urlPath: "/images/",
-});
-
-// Environment check
-const isProduction = process.env.NODE_ENV === "production";
-
-// Minify CSS in production
-eleventyConfig.addFilter("cssmin", function (code) {
-  if (!isProduction) return code;
-  return new CleanCSS({}).minify(code).styles;
-});
-
-// Minify JS in production
-eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (code, callback) {
-  if (!isProduction) {
-    callback(null, code);
-    return;
-  }
-  try {
-    const minified = await minify(code);
-    callback(null, minified.code);
-  } catch (err) {
-    console.error("Terser error: ", err);
-    callback(null, code);
-  }
-});
-
+/**
+ * @param {import("@11ty/eleventy").UserConfig} eleventyConfig
+ * @returns {import("@11ty/eleventy").EleventyConfig}
+ */
 export default function (eleventyConfig) {
   // Add the navigation plugin
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
-  // Set the input directory where your source files reside
-  eleventyConfig.setInputDirectory("src");
-  // Add explicit output directory
-  eleventyConfig.setOutputDirectory("_site");
-
-  // Add passthrough copy for static assets (e.g., CSS, images)
+  // Add passthrough copy for static assets
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/bundle.css");
   eleventyConfig.addPassthroughCopy("src/_includes/playfair.woff2");
 
-  // Configure directory options (optional, as setInputDirectory handles input)
+  // Configure dev server settings
+  eleventyConfig.setServerOptions({
+    // Show local network IP for mobile testing
+    showAllHosts: true,
+    // Enable live reload
+    liveReload: true,
+    // Watch these additional files for changes
+    watch: ["./src/assets/js/**/*.js", "./src/assets/css/**/*.css"],
+  });
+
+  // Add useful shortcodes
+  eleventyConfig.addShortcode("year", () => new Date().getFullYear());
+
+  eleventyConfig.addShortcode(
+    "image",
+    (src, alt, className = "", sizes = "100vw") => {
+      return `<img src="${src}" alt="${alt}" class="${className}" sizes="${sizes}" loading="lazy">`;
+    },
+  );
+
+  // Add useful filters
+  eleventyConfig.addFilter("readableDate", (date) => {
+    return new Date(date).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+  });
+
+  // Configure Markdown with plugins
+  const markdownOptions = {
+    html: true,
+    breaks: false,
+    linkify: true,
+  };
+
+  const markdownLibrary = markdownIt(markdownOptions)
+    .use(markdownItAnchor, {
+      permalink: true,
+      permalinkClass: "direct-link",
+      permalinkSymbol: "#",
+      level: [2, 3, 4, 5, 6], // Only apply to h2-h6, exclude h1
+    })
+    .use(markdownItToc);
+
+  eleventyConfig.setLibrary("md", markdownLibrary);
+
+  // Environment check
+  const isProduction = process.env.NODE_ENV === "production";
+
+  // Log environment
+  console.log(
+    `Building in ${isProduction ? "PRODUCTION" : "DEVELOPMENT"} mode`,
+  );
+
+  // Minify CSS in production
+  eleventyConfig.addFilter("cssmin", function (code) {
+    if (!isProduction) return code;
+    return new CleanCSS({}).minify(code).styles;
+  });
+
+  // Minify JS in production
+  eleventyConfig.addNunjucksAsyncFilter(
+    "jsmin",
+    async function (code, callback) {
+      if (!isProduction) {
+        callback(null, code);
+        return;
+      }
+      try {
+        const minified = await minify(code);
+        callback(null, minified.code);
+      } catch (err) {
+        console.error("Terser error: ", err);
+        callback(null, code);
+      }
+    },
+  );
+
+  // Configure image optimization if available in your Eleventy version
+  try {
+    const Image = eleventyConfig.getImagePlugin();
+    eleventyConfig.addPlugin(Image, {
+      formats: ["webp", "jpeg"],
+      urlPath: "/images/",
+    });
+  } catch (e) {
+    console.log("Note: Image plugin not available in this Eleventy version");
+  }
+
   // Configure directory options
   return {
     dir: {
