@@ -1,13 +1,18 @@
-/* Import Inter for body text */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
-
-/* Local Playfair Display font */
+/* Local fonts */
 @font-face {
     font-display: swap;
     font-family: "Playfair Display";
     font-style: normal;
     font-weight: 400;
     src: url("_includes/playfair.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("_includes/inter-v19-latin-regular.woff2") format("woff2");
 }
 
 body {
@@ -58,7 +63,6 @@ h1 {
 h2 {
     margin-top: 2.5rem;
     margin-bottom: 1.25rem;
-    border-bottom: 2px solid #d4a574;
     padding-bottom: 0.75rem;
     font-size: clamp(1.75rem, 4vw, 2.5rem);
     font-weight: 400;
@@ -69,11 +73,11 @@ h2 {
 h2::after {
     content: "";
     position: absolute;
-    bottom: -2px;
+    bottom: 0;
     left: 0;
     width: 3rem;
     height: 2px;
-    background-color: #1a472a;
+    background-color: #d4a574;
 }
 
 h3 {
@@ -111,17 +115,6 @@ p {
     font-weight: 400;
 }
 
-/* Drop caps for first paragraph after h1 */
-h1 + p::first-letter {
-    font-family: "Playfair Display", serif;
-    font-size: 4em;
-    line-height: 0.8;
-    float: left;
-    margin: 0.1em 0.1em 0 0;
-    color: #1a472a;
-    font-weight: 400;
-}
-
 /* Large text for emphasis */
 .lead {
     font-size: 1.25rem;
@@ -131,11 +124,6 @@ h1 + p::first-letter {
     font-weight: 400;
     font-style: italic;
     text-align: center;
-    border-top: 1px solid #d4a574;
-    border-bottom: 1px solid #d4a574;
-    padding: 1.5rem 2rem;
-    margin: 2rem auto;
-    max-width: 60ch;
 }
 
 /* Small text */
@@ -152,6 +140,7 @@ ol {
 
 li {
     margin-bottom: 0.5rem;
+    line-height: 1.6;
 }
 
 strong {
@@ -162,13 +151,6 @@ strong {
 em {
     font-style: italic;
     color: #2d5a3d;
-}
-
-/* Better list styling */
-ul li,
-ol li {
-    margin-bottom: 0.5rem;
-    line-height: 1.6;
 }
 
 /* Code and monospace */
@@ -237,32 +219,27 @@ a:focus {
 .main-nav > ul > li > a {
     text-decoration: none;
     color: #1a472a;
-    font-weight: 500;
-    padding: 0.4rem 0.8rem;
-    border-radius: 4px;
-    transition: all 0.2s ease;
-    font-family: "Playfair Display", serif;
     font-weight: 400;
-    letter-spacing: -0.01em;
-    border: 1px solid transparent;
-    display: inline-block;
+    padding: 0.5rem 0.9rem;
+    border-radius: 4px;
+    transition: color 0.2s ease;
+    font-family: "Inter", sans-serif;
     font-size: 0.9rem;
     white-space: nowrap;
 }
 
 .main-nav > ul > li > a:hover {
-    background-color: #2d5a3d;
-    color: #fdfcf8;
+    color: #2d5a3d;
 }
 
 .main-nav > ul > li > a:focus {
-    outline: none;
-    border-color: #d4a574;
+    outline: 2px solid #d4a574;
+    outline-offset: 2px;
 }
 
 .main-nav > ul > li > a[aria-current="page"] {
-    background-color: #1a472a;
-    color: #fdfcf8;
+    color: #2d5a3d;
+    font-weight: 500;
 }
 
 /* Contact and projects styling */
@@ -318,32 +295,16 @@ main {
     padding-top: 1.5rem;
 }
 
-/* Elegant dividers */
+/* Simple dividers */
 hr {
     border: none;
     height: 1px;
-    background: linear-gradient(90deg, transparent, #d4a574, transparent);
-    margin: 3rem auto;
-    max-width: 200px;
-    position: relative;
-}
-
-hr::before {
-    content: "❦";
-    position: absolute;
-    top: -0.75rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #fdfcf8;
-    color: #d4a574;
-    padding: 0 1rem;
-    font-size: 1.5rem;
+    background-color: #d4a574;
+    margin: 2rem 0;
 }
 
 /* Subtle text shadows for headings */
-h1,
-h2,
-h3 {
+h1 {
     text-shadow: 0 1px 3px rgba(26, 71, 42, 0.08);
 }
 
@@ -401,8 +362,8 @@ button:focus-visible {
         color: #c8e6c8;
     }
 
-    h2 {
-        border-bottom-color: #8b6f47;
+    h2::after {
+        background-color: #8b6f47;
     }
 
     strong {
@@ -962,6 +923,10 @@ button:focus-visible {
         border-left-color: #8b6f47;
         background-color: rgba(139, 111, 71, 0.1);
         color: #c8e6c8;
+    }
+
+    hr {
+        background-color: #8b6f47;
     }
 }
 

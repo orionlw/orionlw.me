@@ -17,6 +17,9 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/bundle.css");
   eleventyConfig.addPassthroughCopy("src/_includes/playfair.woff2");
+  eleventyConfig.addPassthroughCopy(
+    "src/_includes/inter-v19-latin-regular.woff2",
+  );
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
 
   // Configure dev server settings

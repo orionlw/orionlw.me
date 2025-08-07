@@ -8,7 +8,7 @@ eleventyNavigation:
 
 # Music & Portfolio
 
-Compositions, arrangements, and musical works.
+Original compositions and musical projects spanning jazz, contemporary classical, and experimental genres.
 
 ## Original Compositions
 
@@ -25,20 +25,17 @@ A collection of short pieces exploring different techniques.
 ### **Frost** (2025)
 *For Solo Electric Guitar*
 
-An semi-aleotoric piece that combines clean electric guitar tones with subtle effects processing, evoking winter landscapes.
+A semi-aleotoric piece combining clean electric guitar tones with subtle effects processing, evoking winter landscapes of Nova Scotia.
 
-## Performance Experience
+## Performance Context
 
-- **Jazz Trio** - Standards, arrangements, and original compositions
-- **Experimental Duo** - Jazz fusion, metal, and electronic influences  
-- **Singer-Songwriter Quartet** - Pop, R&B, and country material
-- **Session Work** - Electric bass across multiple genres
+Electric bass performance across multiple genres and collaborative settings, from traditional jazz standards to experimental contemporary works.
 
 
-## Musical Education
+## Education
 
-**Bachelor of Music** - Acadia University  
-Applied Electric Bass study with **[Nicholas D'amato](https://www.nicholasdamato.com/)**  
+Currently completing **Bachelor of Music** at Acadia University  
+Electric Bass study with **[Nicholas D'amato](https://www.nicholasdamato.com/)**  
 Composition study with **[Dr. Derek Charke](https://www.derekcharke.com/)**
 
 ## Notable Performances
