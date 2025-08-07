@@ -8,45 +8,15 @@ eleventyNavigation:
 
 # Currently
 
-## What I'm Into Right Now
+**Listening**: Jerry Granelli  
+**Watching**: Star Trek Deep Space Nine  
+**Reading**: John Constantine Hellblazer by Garth Ennis  
+**Playing**: Baldur's Gate III
 
-*Last updated: August 2025*
+## Gear
 
----
+Getting back into HX Stomp since the Creative Music Workshop. Looking at the new MXR Bass Synth pedal.
 
-## 🎵 Listening To
+## Projects
 
-- **Jerry Granelli**
-
-## 🎬 Watching
-
-- **Star Trek Deep Space Nine**
-
-## 📚 Reading
-
-- **John Constantine Hellblazer by Garth Ennis**
-
-## 🎮 Playing
-
-- **Baldur's Gate III**
-
-## 🎧 Podcasts
-
----
-
-## Recent Discoveries
-
-### Music
-
-### Gear
-
-- **Getting back into HX Stomp** - Been using it more since the Creative Music Workshop. Checking out that new MXR Bass Synth pedal too.
-
----
-
-## Looking Forward To
-
-- **New composition projects** - Working on trio compositions this fall.
----
-
-*This page gets updated every few months with whatever's capturing my attention.*
+Working on trio compositions this fall.

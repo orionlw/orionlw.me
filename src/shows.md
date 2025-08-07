@@ -7,28 +7,19 @@ eleventyNavigation:
   order: 5
 ---
 
-# Shows & Performances
+# Shows
 
 ## Mitchell McFadgen Trio Events
 
-For all Mitchell McFadgen Trio show dates, venues, and ticket information:
+**[mitchellmcfadgentrio.live/events](https://mitchellmcfadgentrio.live/events/)**
 
-**→ [mitchellmcfadgentrio.live/events](https://mitchellmcfadgentrio.live/events/)**
+Regular performances throughout Nova Scotia.
 
-The trio performs regularly throughout Nova Scotia at venues including Trident Cafe, Halifax Brewery Market, and Gus' Pub.
+## Recent
 
-## Other Performance Highlights
+**Creative Music Workshop 2025** — Halifax Central Library (Jerry Granelli Scholarship)  
+**Student Composer Recital** — Acadia University, premiered "The Future Mono"
 
-**Creative Music Workshop 2025** - Halifax Central Library (Jerry Granelli Scholarship)
-**Student Composer Recital** - Acadia University, premiered "The Future Mono"
+For Mitchell McFadgen Trio bookings: [mitchellmcfadgentrio.live/contact](https://mitchellmcfadgentrio.live/contact/)
 
-<!--## Local Scene
-
-**Fo'c'sle Jazz Jam** - Chester, NS
-Regular participant in Nicola Miller's welcoming community jam session.-->
-
-## Booking
-
-For Mitchell McFadgen Trio bookings, visit their [contact page](https://mitchellmcfadgentrio.live/contact/).
-
-For other projects or session work: **[orionlw@pm.me](mailto:orionlw@pm.me)**
+For other projects: **[orionlw@pm.me](mailto:orionlw@pm.me)**
