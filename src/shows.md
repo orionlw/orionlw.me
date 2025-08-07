@@ -4,7 +4,7 @@ layout: base.njk
 description: "Performance calendar and show information for Orion Leidl Wilson."
 eleventyNavigation:
   key: "Shows"
-  order: 8
+  order: 5
 ---
 
 # Shows & Performances

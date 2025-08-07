@@ -1,9 +1,6 @@
 ---
 title: Currently
 layout: base.njk
-eleventyNavigation:
-  key: "Currently"
-  order: 6
 ---
 
 # Currently

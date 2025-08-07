@@ -4,7 +4,7 @@ layout: base.njk
 description: "Get in touch with Orion Leidl Wilson for musical collaborations, performances, or general inquiries."
 eleventyNavigation:
   key: "Contact"
-  order: 7
+  order: 6
 ---
 
 # Contact

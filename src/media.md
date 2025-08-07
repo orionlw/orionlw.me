@@ -2,9 +2,7 @@
 title: Media
 layout: base.njk
 description: "Audio samples, recordings, and multimedia content from Orion Leidl Wilson's musical projects."
-eleventyNavigation:
-  key: "Media"
-  order: 3
+
 ---
 
 # Media
