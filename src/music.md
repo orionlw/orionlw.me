@@ -34,8 +34,8 @@ Electric bass performance across multiple genres and collaborative settings, fro
 
 ## Education
 
-Currently completing **Bachelor of Music** at Acadia University  
-Electric Bass study with **[Nicholas D'amato](https://www.nicholasdamato.com/)**  
+**Bachelor of Music** (2025) — Acadia University, Dean's List (3.8 GPA)
+Electric Bass study with **[Nicholas D'amato](https://www.nicholasdamato.com/)**
 Composition study with **[Dr. Derek Charke](https://www.derekcharke.com/)**
 
 ## Notable Performances

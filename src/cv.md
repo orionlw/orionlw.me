@@ -5,7 +5,7 @@ eleventyNavigation:
   order: 3
 ---
 
-# Orion Leidl Wilson
+# Curriculum Vitae
 
 **Location:** Grand Pré, Nova Scotia, Canada
 **Email:** [orionlw@pm.me](mailto:orionlw@pm.me)
@@ -18,7 +18,7 @@ Emerging artist with a passion for jazz, contemporary classical, and electronic 
 ## Education
 
 - **Bachelor of Music, Acadia University** (Sept 2021 – May 2025)
-  *Principal Instrument: Electric Bass*
+  *Principal Instrument: Electric Bass* | **Dean's List** (3.8 GPA)
 
   Comprehensive training in music theory, performance, and academic research. Specialized in electric bass, jazz ensemble, and contemporary composition. Studied composition with Dr. Derek Charke, including electronic music and applied composition. Eight semesters of applied electric bass guitar with Nicholas D'amato. Diverse coursework in theory, global music, gamelan, and advanced music studies.
 
