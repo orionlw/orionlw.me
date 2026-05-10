@@ -1,5 +1,6 @@
 const USER = "orionlw";
 const ENDPOINT = `https://letterboxd.com/${USER}/rss/`;
+const LIMIT = 5;
 
 function extractTag(xml, tag) {
   const re = new RegExp(`<${tag}>(?:<!\\[CDATA\\[)?([\\s\\S]*?)(?:\\]\\]>)?</${tag}>`);
@@ -15,12 +16,16 @@ export default async function () {
       return null;
     }
     const xml = await res.text();
-    const item = xml.match(/<item>([\s\S]*?)<\/item>/);
-    if (!item) return null;
-    const title = extractTag(item[1], "title");
-    const link = extractTag(item[1], "link");
-    if (!title) return null;
-    return { title, link };
+    const itemRe = /<item>([\s\S]*?)<\/item>/g;
+    const films = [];
+    let m;
+    while ((m = itemRe.exec(xml)) !== null && films.length < LIMIT) {
+      const title = extractTag(m[1], "title");
+      const link = extractTag(m[1], "link");
+      if (!title) continue;
+      films.push({ title, link });
+    }
+    return films.length ? films : null;
   } catch (err) {
     console.warn("[watching] fetch failed:", err.message);
     return null;
