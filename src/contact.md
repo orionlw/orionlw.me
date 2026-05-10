@@ -18,4 +18,4 @@ Session work, composition projects, teaching, performances throughout the Mariti
 
 ## Other Links
 
-[GitHub]({{ site.social.github }}) • [Letterboxd]({{ site.social.letterboxd }}) • [ListenBrainz]({{ site.social.listenbrainz }})
+[GitHub]({{ site.social.github }}) • [Letterboxd]({{ site.social.letterboxd }}) • [ListenBrainz]({{ site.social.listenbrainz }}) • [Storygraph]({{ site.social.storygraph }})

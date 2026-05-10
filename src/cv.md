@@ -13,7 +13,7 @@ eleventyNavigation:
 
 ## Summary
 
-Emerging artist with a passion for jazz, contemporary classical, and electronic music.
+Bassist and composer based in Grand Pré, Nova Scotia. Performing with the Mitchell McFadgen Trio across the Maritimes; background in jazz, contemporary classical, and electronic music.
 
 ## Education
 
@@ -48,11 +48,17 @@ Emerging artist with a passion for jazz, contemporary classical, and electronic 
 
 ## Experience
 
-- **Sound Technician** – Acadia University (October 2024)
-  Live mixing and sound reinforcement for Canadian Percussion Network conference, including complex electro-acoustic performances.
+- **Summer Staff** – Charles McDonald Concrete House (May 2026 – July 2026)
+  Eight-week summer stint at the Nova Scotia heritage site.
+
+- **Concessions Manager** – [Al Whittle Theatre](https://www.alwhittletheatre.ca/) (August 2025 – Present)
+  Manage concessions operations at the Al Whittle Theatre, continuing from the 2025 summer co-op role.
 
 - **Summer Student** – [Acadia Theatre Co-op](https://www.alwhittletheatre.ca/) (May 2025 – July 2025)
   Assisted management of Al Whittle Theatre, created promotional material, and managed ticket/concession sales.
+
+- **Sound Technician** – Acadia University (October 2024)
+  Live mixing and sound reinforcement for Canadian Percussion Network conference, including complex electro-acoustic performances.
 
 ## References
 

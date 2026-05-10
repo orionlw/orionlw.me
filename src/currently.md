@@ -8,15 +8,8 @@ eleventyNavigation:
 
 # Currently
 
-**Listening**: Jerry Granelli  
-**Watching**: Star Trek Deep Space Nine  
-**Reading**: John Constantine Hellblazer by Garth Ennis  
-**Playing**: Baldur's Gate III
+**Listening**: {% if listening %}*{{ listening.track }}* — {{ listening.artist }}{% else %}see [ListenBrainz]({{ site.social.listenbrainz }}){% endif %}  
+**Watching**: {% if watching %}{% if watching.link %}[{{ watching.title }}]({{ watching.link }}){% else %}{{ watching.title }}{% endif %}{% else %}see [Letterboxd]({{ site.social.letterboxd }}){% endif %}  
+**Reading**: see [Storygraph]({{ site.social.storygraph }})
 
-## Gear
-
-Getting back into HX Stomp since the Creative Music Workshop. Looking at the new MXR Bass Synth pedal.
-
-## Projects
-
-Working on trio compositions this fall.
+<p class="muted"><small>Listening and watching pull from ListenBrainz and Letterboxd at build time.</small></p>
