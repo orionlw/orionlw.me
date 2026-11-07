@@ -1,29 +1,9 @@
 {
   "items": [
     {
-      "name": "Mitchell McFadgen Trio",
-      "url": "https://mitchellmcfadgentrio.live/",
-      "description": "Guitar trio playing standards, arrangements, and originals. I play bass and maintain the website."
-    },
-    {
       "name": "Nightdogs",
       "url": "https://nightdogs.xyz",
       "description": "A small web project."
-    },
-    {
-      "name": "audiofuse-alsa-ucm",
-      "url": "https://github.com/orionlw/audiofuse-alsa-ucm",
-      "description": "An ALSA UCM profile for the Arturia AudioFuse, fixing the \"Analog Surround 7.1\" profile on Linux."
-    },
-    {
-      "name": "MammothFuss",
-      "url": "https://github.com/orionlw/MammothFuss",
-      "description": "A fuzz pedal schematic, drawn in EagleCAD."
-    },
-    {
-      "name": "personal-scripts",
-      "url": "https://github.com/orionlw/personal-scripts",
-      "description": "Shell scripts and configuration files I use on my own machines."
     },
     {
       "name": "dotfiles",
@@ -33,7 +13,7 @@
     {
       "name": "orionlw.me",
       "url": "https://github.com/orionlw/orionlw.me",
-      "description": "This site: Eleventy, hand-written CSS, deployed on Netlify. The Now page pulls listening, watching, and reading from ListenBrainz, Letterboxd, and Storygraph and rebuilds daily."
+      "description": "This site: Eleventy, CSS, deployed on Netlify. The Now page pulls listening, watching, and reading from ListenBrainz, Letterboxd, and Storygraph and rebuilds daily."
     }
   ]
 }
