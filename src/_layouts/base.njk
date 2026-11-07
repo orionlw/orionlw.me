@@ -8,20 +8,20 @@ title: Orion Leidl Wilson
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
-    <meta name="description" content="{{ description or 'Electric Bassist & Composer from Grand Pré, Nova Scotia. Specializing in jazz, contemporary classical, and electronic music.' }}">
+    <meta name="description" content="{{ description or 'Bassist, composer, and computer tinkerer in Grand Pré, Nova Scotia.' }}">
     <meta name="author" content="Orion Leidl Wilson">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ page.url | absoluteUrl(site.url) }}">
     <meta property="og:title" content="{{ title }}">
-    <meta property="og:description" content="{{ description or 'Electric Bassist & Composer from Grand Pré, Nova Scotia. Specializing in jazz, contemporary classical, and electronic music.' }}">
+    <meta property="og:description" content="{{ description or 'Bassist, composer, and computer tinkerer in Grand Pré, Nova Scotia.' }}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary">
     <meta property="twitter:url" content="{{ page.url | absoluteUrl(site.url) }}">
     <meta property="twitter:title" content="{{ title }}">
-    <meta property="twitter:description" content="{{ description or 'Electric Bassist & Composer from Grand Pré, Nova Scotia. Specializing in jazz, contemporary classical, and electronic music.' }}">
+    <meta property="twitter:description" content="{{ description or 'Bassist, composer, and computer tinkerer in Grand Pré, Nova Scotia.' }}">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -50,8 +50,13 @@ title: Orion Leidl Wilson
     </main>
     <footer class="site-footer">
       <div class="footer-links">
+        <a href="/now/">Now</a>
+        <a href="/music/">Music</a>
+        <a href="/projects/">Projects</a>
         <a href="/media/">Media</a>
         <a href="/cv/">CV</a>
+        <a href="{{ site.social.github }}">GitHub</a>
+        <a href="{{ site.social.mastodon }}">Mastodon</a>
       </div>
       <p class="footer-text">© {% year %} {{ site.author.name }}</p>
     </footer>

@@ -1,8 +1,9 @@
 ---
 layout: base.njk
+description: "CV for Orion Leidl Wilson — bassist, composer, and technical tinkerer in Grand Pré, Nova Scotia."
 eleventyNavigation:
-  key: "CV"
-  order: 3
+  key: CV
+  order: 6
 ---
 
 # Curriculum Vitae
@@ -13,7 +14,7 @@ eleventyNavigation:
 
 ## Summary
 
-Bassist and composer based in Grand Pré, Nova Scotia. Performing with the Mitchell McFadgen Trio across the Maritimes; background in jazz, contemporary classical, and electronic music.
+Bassist and composer in Grand Pré, Nova Scotia, performing with the Mitchell McFadgen Trio across the Maritimes, and Coordinator of the Al Whittle Theatre in Wolfville. Background in jazz, contemporary classical, and electronic music, with a parallel interest in computing — self-hosted infrastructure, small tools, and audio hardware. Previously studied science and engineering at Acadia.
 
 ## Education
 
@@ -48,11 +49,14 @@ Bassist and composer based in Grand Pré, Nova Scotia. Performing with the Mitch
 
 ## Experience
 
+- **Coordinator** – [Al Whittle Theatre](https://www.alwhittletheatre.ca/) / Acadia Cinema Cooperative (September 2026 – Present)
+  Run the day-to-day operation of the theatre: schedule and manage front-of-house, concessions, merchandise, and technical staff and volunteers; handle facility upkeep and procurement; operate lighting, sound, and DCP projection; ingest films and build screening playlists; maintain the website, public events calendar, e-newsletter, and external listings; support the programming and promotions committees and weekly operations meetings with the Executive Director.
+
 - **Summer Staff** – Charles McDonald Concrete House (May 2026 – July 2026)
   Eight-week summer stint at the Nova Scotia heritage site.
 
-- **Concessions Manager** – [Al Whittle Theatre](https://www.alwhittletheatre.ca/) (August 2025 – Present)
-  Manage concessions operations at the Al Whittle Theatre, continuing from the 2025 summer co-op role.
+- **Concessions Manager** – [Al Whittle Theatre](https://www.alwhittletheatre.ca/) (August 2025 – September 2026)
+  Managed concessions operations at the Al Whittle Theatre, continuing from the 2025 summer co-op role; moved into the Coordinator position in September 2026.
 
 - **Summer Student** – [Acadia Theatre Co-op](https://www.alwhittletheatre.ca/) (May 2025 – July 2025)
   Assisted management of Al Whittle Theatre, created promotional material, and managed ticket/concession sales.

@@ -1,6 +1,6 @@
 {
   "title": "Orion Leidl Wilson",
-  "description": "Electric Bassist & Composer from Grand Pré, Nova Scotia. Specializing in jazz, contemporary classical, and electronic music.",
+  "description": "Bassist, composer, and computer tinkerer in Grand Pré, Nova Scotia.",
   "url": "https://orionlw.me",
   "author": {
     "name": "Orion Leidl Wilson",
@@ -26,6 +26,16 @@
       "name": "Nightdogs",
       "url": "https://nightdogs.xyz",
       "description": "Nightdogs are hotdogs that you eat in the middle of the night"
+    },
+    {
+      "name": "audiofuse-alsa-ucm",
+      "url": "https://github.com/orionlw/audiofuse-alsa-ucm",
+      "description": "ALSA UCM profile for the Arturia AudioFuse"
+    },
+    {
+      "name": "MammothFuss",
+      "url": "https://github.com/orionlw/MammothFuss",
+      "description": "Fuzz pedal schematic in EagleCAD"
     }
   ]
 }

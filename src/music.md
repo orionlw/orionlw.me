@@ -1,46 +1,48 @@
 ---
 title: Music
 layout: base.njk
+description: "Compositions and performance by Orion Leidl Wilson — jazz, contemporary classical, and electronic music."
 eleventyNavigation:
-  key: "Music"
-  order: 4
+  key: Music
+  order: 3
 ---
 
-# Music & Portfolio
+# Music
 
-Original compositions and musical projects spanning jazz, contemporary classical, and experimental genres.
+I play electric bass and compose. Most of it lives somewhere between jazz, contemporary classical, and electronic music, and most of it happens in Nova Scotia.
 
-## Original Compositions
+## Playing
+
+**Mitchell McFadgen Trio** — guitar trio, standards and original arrangements, playing around the Maritimes. Dates at **[mitchellmcfadgentrio.live/events](https://mitchellmcfadgentrio.live/events/)**, recordings at **[mitchellmcfadgentrio.live/music](https://mitchellmcfadgentrio.live/music/)**.
+
+**Other work** — sideman dates, sessions, and the occasional louder band. [Get in touch](/contact/) if you're putting something together.
+
+## Compositions
 
 ### **The Future Mono** (2025)
 *For Jazz Trio*
 
-A contemporary jazz composition exploring themes of technology and human connection. Premiered at my Student Composer Recital in March 2025.
+A contemporary jazz piece about technology and human connection. Premiered at my Student Composer Recital, Acadia University, March 2025.
 
 ### **Miniatures I for Solo Piano** (2024)
 *Solo Piano*
 
-A collection of short pieces exploring different techniques.
+Short pieces, each exploring a different technique.
 
 ### **Frost** (2025)
 *For Solo Electric Guitar*
 
-A semi-aleotoric piece combining clean electric guitar tones with subtle effects processing, evoking winter landscapes of Nova Scotia.
+Semi-aleatoric, clean electric guitar with subtle processing — winter in Nova Scotia, roughly.
 
-## Performance Context
+## Recordings & Setup
 
-Electric bass performance across multiple genres and collaborative settings, from traditional jazz standards to experimental contemporary works.
+Audio, gear, and how it's put together: [Media](/media/).
 
-
-## Education
+## Study
 
 **Bachelor of Music** (2025) — Acadia University, Dean's List (3.8 GPA)
-Electric Bass study with **[Nicholas D'amato](https://www.nicholasdamato.com/)**
-Composition study with **[Dr. Derek Charke](https://www.derekcharke.com/)**
+Electric bass with **[Nicholas D'amato](https://www.nicholasdamato.com/)** · Composition with **[Dr. Derek Charke](https://www.derekcharke.com/)**
 
-## Notable Performances
+Before music I studied science and engineering at Acadia. It shows up in how I approach sound, and in how much I enjoy the technical half of it.
 
-- **Creative Music Workshop 2025** - Jerry Granelli Scholarship recipient
-- **Student Composer Recital** - Acadia University, March 2025
-
-*Audio samples available on the [Media](/media/) page. For collaborations, visit [Contact](/contact/).*
+More detail in the [CV](/cv/).

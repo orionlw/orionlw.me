@@ -1,12 +1,21 @@
 ---
-title: Currently
+title: Now
 layout: base.njk
+description: "What Orion Leidl Wilson is reading, watching, listening to, and working on right now."
 eleventyNavigation:
-  key: "Currently"
+  key: Now
   order: 2
 ---
 
-# Currently
+# Now
+
+A snapshot of the present. The lists below update themselves; everything else is hand-written and therefore only as current as my last edit.
+
+## Working on
+
+- Playing bass with the **[Mitchell McFadgen Trio](https://mitchellmcfadgentrio.live/)** and writing new material
+- Keeping a small self-hosted server alive and learning the parts I don't know yet
+- Slowly improving [this site](https://github.com/orionlw/orionlw.me)
 
 ## Listening
 

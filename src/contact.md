@@ -1,21 +1,27 @@
 ---
 title: Contact
 layout: base.njk
-description: "Get in touch with Orion Leidl Wilson for musical collaborations, performances, or general inquiries."
+description: "Get in touch with Orion Leidl Wilson — music, collaborations, or anything else."
 eleventyNavigation:
-  key: "Contact"
-  order: 6
+  key: Contact
+  order: 7
 ---
 
 # Contact
 
-**Email**: [{{ site.author.email }}](mailto:{{ site.author.email }})  
+**Email**: [{{ site.author.email }}](mailto:{{ site.author.email }})
 **Mastodon**: [{{ site.social.mastodon }}]({{ site.social.mastodon }})
 
-## Available For
+Email is the reliable way to reach me.
 
-Session work, composition projects, teaching, performances throughout the Maritimes.
+## Music
 
-## Other Links
+Session work, composition projects, teaching, and performances throughout the Maritimes.
+
+## Theatre
+
+For Al Whittle Theatre bookings and rentals, use the theatre's own channels: **[alwhittletheatre.ca](https://www.alwhittletheatre.ca/)**.
+
+## Elsewhere
 
 [GitHub]({{ site.social.github }}) • [Letterboxd]({{ site.social.letterboxd }}) • [ListenBrainz]({{ site.social.listenbrainz }}) • [Storygraph]({{ site.social.storygraph }})
