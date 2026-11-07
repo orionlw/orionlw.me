@@ -11,6 +11,13 @@ backend:
   name: github
   repo: orionlw/orionlw.me
   branch: main
+  # Token-only sign-in: the GitHub OAuth button relies on Netlify's OAuth
+  # broker (api.netlify.com/auth), which needs a GitHub OAuth app installed in
+  # Netlify → Project configuration → Security → OAuth, callback
+  # https://api.netlify.com/auth/done. Once that exists, delete the line below
+  # to bring the button back.
+  auth_methods: [token]
+  # site_domain: orionlw.me
 
 site_url: https://orionlw.me
 display_url: https://orionlw.me
