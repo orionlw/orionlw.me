@@ -32,12 +32,8 @@ collections:
             label: Bio paragraphs
             label_singular: Paragraph
             widget: list
+            hint: "Markdown links are allowed, e.g. [text](https://example.com)."
             field: { name: paragraph, label: Paragraph, widget: text }
-          - name: _note
-            label: Note
-            widget: string
-            required: false
-            hint: "Markdown links are allowed in paragraphs, e.g. [text](https://example.com). This field is not used by the site."
 
       - name: now
         label: Now — working on
