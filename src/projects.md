@@ -14,23 +14,23 @@ Things I've built, fixed, or got working well enough to keep.
 <ul class="projects-list">
   <li>
     <h3><a href="https://mitchellmcfadgentrio.live/">Mitchell McFadgen Trio</a></h3>
-    <p>Guitar trio playing standards, arrangements, and originals. I play bass. Website and event listings are mine too.</p>
+    <p>Guitar trio playing standards, arrangements, and originals. I play bass and maintain the website.</p>
   </li>
   <li>
     <h3><a href="https://nightdogs.xyz">Nightdogs</a></h3>
-    <p>Hotdogs that you eat in the middle of the night. A small web project.</p>
+    <p>A small web project.</p>
   </li>
   <li>
     <h3><a href="https://github.com/orionlw/audiofuse-alsa-ucm">audiofuse-alsa-ucm</a></h3>
-    <p>An ALSA UCM profile for the Arturia AudioFuse, so Linux stops insisting it is a surround system.</p>
+    <p>An ALSA UCM profile for the Arturia AudioFuse, fixing the "Analog Surround 7.1" profile on Linux.</p>
   </li>
   <li>
     <h3><a href="https://github.com/orionlw/MammothFuss">MammothFuss</a></h3>
-    <p>A fuzz pedal, drawn in EagleCAD. Circuit design is just composition with worse tolerances.</p>
+    <p>A fuzz pedal schematic, drawn in EagleCAD.</p>
   </li>
   <li>
     <h3><a href="https://github.com/orionlw/personal-scripts">personal-scripts</a> &amp; <a href="https://github.com/orionlw/dotfiles">dotfiles</a></h3>
-    <p>The scripts and configuration that keep my machines behaving. Mostly shell, held together with care.</p>
+    <p>Shell scripts and configuration files I use on my own machines.</p>
   </li>
   <li>
     <h3>orionlw.me</h3>
@@ -40,7 +40,7 @@ Things I've built, fixed, or got working well enough to keep.
 
 ## Self-hosting
 
-Most of what I use day to day runs on a machine at home: a media server, a few dashboards, backups, and whatever I'm currently curious about. It's a good way to learn a system — own it, break it, put it back together.
+Most of what I use day to day runs on a machine at home: a media server, a few dashboards, and backups.
 
 ## Elsewhere
 

@@ -14,8 +14,8 @@ A snapshot of the present. The lists below update themselves; everything else is
 ## Working on
 
 - Playing bass with the **[Mitchell McFadgen Trio](https://mitchellmcfadgentrio.live/)** and writing new material
-- Keeping a small self-hosted server alive and learning the parts I don't know yet
-- Slowly improving [this site](https://github.com/orionlw/orionlw.me)
+- Maintaining a server and a handful of self-hosted services at home
+- Improving [this site](https://github.com/orionlw/orionlw.me)
 
 ## Listening
 

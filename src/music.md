@@ -15,7 +15,7 @@ I play electric bass and compose. Most of it lives somewhere between jazz, conte
 
 **Mitchell McFadgen Trio** — guitar trio, standards and original arrangements, playing around the Maritimes. Dates at **[mitchellmcfadgentrio.live/events](https://mitchellmcfadgentrio.live/events/)**, recordings at **[mitchellmcfadgentrio.live/music](https://mitchellmcfadgentrio.live/music/)**.
 
-**Other work** — sideman dates, sessions, and the occasional louder band. [Get in touch](/contact/) if you're putting something together.
+**Other work** — sideman dates and sessions. [Get in touch](/contact/) for bookings and collaborations.
 
 ## Compositions
 
@@ -32,7 +32,7 @@ Short pieces, each exploring a different technique.
 ### **Frost** (2025)
 *For Solo Electric Guitar*
 
-Semi-aleatoric, clean electric guitar with subtle processing — winter in Nova Scotia, roughly.
+A semi-aleatoric piece for clean electric guitar with effects processing.
 
 ## Recordings & Setup
 
@@ -43,6 +43,6 @@ Audio, gear, and how it's put together: [Media](/media/).
 **Bachelor of Music** (2025) — Acadia University, Dean's List (3.8 GPA)
 Electric bass with **[Nicholas D'amato](https://www.nicholasdamato.com/)** · Composition with **[Dr. Derek Charke](https://www.derekcharke.com/)**
 
-Before music I studied science and engineering at Acadia. It shows up in how I approach sound, and in how much I enjoy the technical half of it.
+Before music I studied science and engineering at Acadia.
 
 More detail in the [CV](/cv/).

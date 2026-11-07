@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-description: "CV for Orion Leidl Wilson — bassist, composer, and technical tinkerer in Grand Pré, Nova Scotia."
+description: "CV for Orion Leidl Wilson — bassist, composer, and theatre coordinator in Grand Pré, Nova Scotia."
 eleventyNavigation:
   key: CV
   order: 6

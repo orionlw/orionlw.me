@@ -1,7 +1,7 @@
 ---
 title: Orion Leidl Wilson
 layout: base.njk
-description: "Bassist, composer, and computer tinkerer in Grand Pré, Nova Scotia."
+description: "Bassist and composer in Grand Pré, Nova Scotia. Coordinator of the Al Whittle Theatre."
 eleventyNavigation:
   key: Home
   order: 1
@@ -9,19 +9,19 @@ eleventyNavigation:
 
 # {{ site.author.name }}
 
-<p class="lead">Bassist, composer, and computer tinkerer in {{ site.location }}.</p>
+<p class="lead">Bassist, composer, and Coordinator of the Al Whittle Theatre in Wolfville, Nova Scotia.</p>
 
-I play electric bass and write music — jazz, contemporary classical, and electronic — mostly around the Maritimes with the **[Mitchell McFadgen Trio](https://mitchellmcfadgentrio.live/)**. I studied music at Acadia University, and before that science and engineering, which is probably why I like sounds that come out of wires.
+I play electric bass and compose. I perform with the **[Mitchell McFadgen Trio](https://mitchellmcfadgentrio.live/)** around the Maritimes, and I write for jazz trio, solo piano, and solo electric guitar.
 
-Most weeks I'm at the **[Al Whittle Theatre](https://www.alwhittletheatre.ca/)** in Wolfville, where I coordinate the place — staff and volunteers, front of house, the projector, the website, and whatever decides to break during a screening.
+I studied music at Acadia University, graduating in 2025 with a Bachelor of Music; before that I studied science and engineering. Since September 2026 I have been Coordinator of the **[Al Whittle Theatre](https://www.alwhittletheatre.ca/)**, where I manage staff and volunteers, front of house, technical and projection operations, and the theatre's website and calendar.
 
-The other half of my time goes to computing. I run a small pile of self-hosted services at home, write scripts so I don't have to do things twice, and take apart anything with a circuit board in it. Some of that ends up on [GitHub]({{ site.social.github }}).
+Outside of music I'm interested in computing. I run a number of services on a server at home, and I write small scripts and tools. Some of that work is on [GitHub]({{ site.social.github }}).
 
-I live in the Annapolis Valley, near the water, with a bass amp that is louder than the house.
+I live in Grand Pré, Nova Scotia.
 
 ## Music
 
-Electric bass, composition, and the occasional loud pedal. Selected works, recordings, and where to hear them live:
+Compositions, recordings, and performances:
 
 - **[Music](/music/)** — compositions and what I'm playing
 - **[Media](/media/)** — recordings, setup, and samples
@@ -29,13 +29,13 @@ Electric bass, composition, and the occasional loud pedal. Selected works, recor
 
 ## Projects
 
-Software, hardware, and things that were a good idea at the time:
+Software, hardware, and other things I've built:
 
 - **[Projects](/projects/)** — instruments, tools, scripts, and this website
 
 ## Now
 
-What I'm reading, watching, listening to, and working on at the moment:
+What I'm reading, watching, listening to, and working on:
 
 - **[Now](/now/)** — an occasionally accurate snapshot
 
