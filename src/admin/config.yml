@@ -1,0 +1,125 @@
+# Sveltia CMS configuration for orionlw.me
+# Served at /admin/ — edits commit straight to this repo, Netlify rebuilds.
+#
+# Sign-in: "Sign in with Token" works out of the box (GitHub → Settings →
+# Developer settings → fine-grained token, repo orionlw/orionlw.me,
+# Contents: Read and write). To use GitHub OAuth instead, register an OAuth
+# app with callback https://api.netlify.com/auth/done and install GitHub as an
+# OAuth provider in Netlify → Project configuration → Security → OAuth.
+
+backend:
+  name: github
+  repo: orionlw/orionlw.me
+  branch: main
+
+site_url: https://orionlw.me
+display_url: https://orionlw.me
+logo_url: https://orionlw.me/favicon.ico
+
+media_folder: "src/assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: pages
+    label: Pages
+    files:
+      - name: home
+        label: Home
+        file: src/_data/home.json
+        fields:
+          - { name: lead, label: Intro line, widget: string }
+          - name: bio
+            label: Bio paragraphs
+            label_singular: Paragraph
+            widget: list
+            field: { name: paragraph, label: Paragraph, widget: text }
+          - name: _note
+            label: Note
+            widget: string
+            required: false
+            hint: "Markdown links are allowed in paragraphs, e.g. [text](https://example.com). This field is not used by the site."
+
+      - name: now
+        label: Now — working on
+        file: src/_data/now.json
+        fields:
+          - name: working
+            label: Working on
+            label_singular: Item
+            widget: list
+            hint: "One line per item. Markdown links are allowed."
+            field: { name: item, label: Item, widget: text }
+
+      - name: shows
+        label: Shows
+        file: src/_data/shows.json
+        fields:
+          - name: calendarUrl
+            label: Trio calendar URL
+            widget: string
+          - name: recent
+            label: Recent shows
+            label_singular: Show
+            widget: list
+            fields:
+              - { name: title, label: Act, widget: string }
+              - { name: venue, label: Venue, widget: string }
+              - { name: date, label: "Date (e.g. May 8, 2026)", widget: string }
+          - name: past
+            label: Past shows
+            label_singular: Show
+            widget: list
+            fields:
+              - { name: title, label: Event, widget: string }
+              - { name: venue, label: Venue, widget: string }
+              - { name: note, label: Note, widget: string, required: false }
+
+  - name: projects
+    label: Projects
+    files:
+      - name: projects
+        label: Project list
+        file: src/_data/projects.json
+        fields:
+          - name: items
+            label: Projects
+            label_singular: Project
+            widget: list
+            fields:
+              - { name: name, label: Name, widget: string }
+              - { name: url, label: Link, widget: string, required: false }
+              - { name: description, label: Description, widget: text }
+
+  - name: music
+    label: Music
+    files:
+      - name: compositions
+        label: Compositions
+        file: src/_data/compositions.json
+        fields:
+          - name: items
+            label: Compositions
+            label_singular: Piece
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: year, label: Year, widget: number, value_type: int }
+              - { name: instrumentation, label: Instrumentation, widget: string }
+              - { name: description, label: Description, widget: text }
+
+  - name: cv
+    label: CV
+    files:
+      - name: cv
+        label: Curriculum Vitae
+        file: src/cv.md
+        fields:
+          - { name: layout, label: Layout, widget: hidden, default: base.njk }
+          - name: eleventyNavigation
+            label: Navigation
+            widget: object
+            fields:
+              - { name: key, label: Label, widget: string }
+              - { name: order, label: Order, widget: number, value_type: int }
+          - { name: description, label: Page description, widget: string, required: false }
+          - { name: body, label: Content, widget: markdown }

@@ -1,0 +1,22 @@
+{
+  "recent": [
+    {
+      "title": "Mitchell McFadgen Trio",
+      "venue": "Bend Ridge Winery",
+      "date": "May 8, 2026"
+    }
+  ],
+  "past": [
+    {
+      "title": "Creative Music Workshop 2025",
+      "venue": "Halifax Central Library",
+      "note": "Jerry Granelli Scholarship"
+    },
+    {
+      "title": "Student Composer Recital 2025",
+      "venue": "Acadia University",
+      "note": "Premiered The Future Mono"
+    }
+  ],
+  "calendarUrl": "https://mitchellmcfadgentrio.live/events/"
+}

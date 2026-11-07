@@ -11,19 +11,18 @@ eleventyNavigation:
 
 ## Upcoming
 
-Dates are kept on the trio's calendar: **[mitchellmcfadgentrio.live/events](https://mitchellmcfadgentrio.live/events/)**.
+Dates are kept on the trio's calendar: **[the Mitchell McFadgen Trio events page]({{ shows.calendarUrl }})**.
 
 If you'd like to book something, [get in touch](/contact/).
 
 ## Recent
-
-**Mitchell McFadgen Trio** — Bend Ridge Winery, May 8, 2026
-
+{% for show in shows.recent %}
+**{{ show.title }}** — {{ show.venue }}, {{ show.date }}
+{% endfor %}
 ## Past
-
-**Creative Music Workshop 2025** — Halifax Central Library (Jerry Granelli Scholarship)
-**Student Composer Recital 2025** — Acadia University, premiered *The Future Mono*
-
+{% for show in shows.past %}
+**{{ show.title }}** — {{ show.venue }}{% if show.note %} ({{ show.note }}){% endif %}
+{% endfor %}
 ---
 
 For Mitchell McFadgen Trio bookings: [mitchellmcfadgentrio.live/contact](https://mitchellmcfadgentrio.live/contact/)

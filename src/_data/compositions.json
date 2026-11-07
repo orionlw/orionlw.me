@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "title": "The Future Mono",
+      "year": 2025,
+      "instrumentation": "For Jazz Trio",
+      "description": "A contemporary jazz piece about technology and human connection. Premiered at my Student Composer Recital, Acadia University, March 2025."
+    },
+    {
+      "title": "Miniatures I for Solo Piano",
+      "year": 2024,
+      "instrumentation": "Solo Piano",
+      "description": "Short pieces, each exploring a different technique."
+    },
+    {
+      "title": "Frost",
+      "year": 2025,
+      "instrumentation": "For Solo Electric Guitar",
+      "description": "A semi-aleatoric piece for clean electric guitar with effects processing."
+    }
+  ]
+}

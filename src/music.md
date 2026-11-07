@@ -18,22 +18,12 @@ I play electric bass and compose. Most of it lives somewhere between jazz, conte
 **Other work** — sideman dates and sessions. [Get in touch](/contact/) for bookings and collaborations.
 
 ## Compositions
+{% for work in compositions.items %}
+### **{{ work.title }}** ({{ work.year }})
+*{{ work.instrumentation }}*
 
-### **The Future Mono** (2025)
-*For Jazz Trio*
-
-A contemporary jazz piece about technology and human connection. Premiered at my Student Composer Recital, Acadia University, March 2025.
-
-### **Miniatures I for Solo Piano** (2024)
-*Solo Piano*
-
-Short pieces, each exploring a different technique.
-
-### **Frost** (2025)
-*For Solo Electric Guitar*
-
-A semi-aleatoric piece for clean electric guitar with effects processing.
-
+{{ work.description }}
+{% endfor %}
 ## Recordings & Setup
 
 Audio, gear, and how it's put together: [Media](/media/).

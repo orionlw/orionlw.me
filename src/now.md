@@ -12,10 +12,9 @@ eleventyNavigation:
 A snapshot of the present. The lists below update themselves; everything else is hand-written and therefore only as current as my last edit.
 
 ## Working on
-
-- Playing bass with the **[Mitchell McFadgen Trio](https://mitchellmcfadgentrio.live/)** and writing new material
-- Maintaining a server and a handful of self-hosted services at home
-- Improving [this site](https://github.com/orionlw/orionlw.me)
+{% for item in now.working %}
+- {{ item | md | safe }}
+{% endfor %}
 
 ## Listening
 

@@ -22,6 +22,12 @@ export default function (eleventyConfig) {
   );
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
 
+  // Sveltia CMS: the admin UI bundle and its collection config
+  eleventyConfig.addPassthroughCopy({
+    "node_modules/@sveltia/cms/dist/sveltia-cms.js": "admin/sveltia-cms.js",
+    "src/admin/config.yml": "admin/config.yml",
+  });
+
   // Configure dev server settings
   eleventyConfig.setServerOptions({
     // Show local network IP for mobile testing
@@ -92,6 +98,14 @@ export default function (eleventyConfig) {
     .use(markdownItToc);
 
   eleventyConfig.setLibrary("md", markdownLibrary);
+
+  // Inline and block Markdown rendering for JSON-driven content (CMS editable)
+  eleventyConfig.addFilter("md", (value) =>
+    markdownLibrary.renderInline(String(value ?? "")),
+  );
+  eleventyConfig.addFilter("mdBlock", (value) =>
+    markdownLibrary.render(String(value ?? "")),
+  );
 
   // Environment check
   const isProduction = process.env.NODE_ENV === "production";
